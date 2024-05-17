@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "BaiThucHanhSo3", "BaiThucHanhSo3\BaiThucHanhSo3.dtproj", "{B9B99154-EA78-4112-8E0E-45D67D57E18E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9B99154-EA78-4112-8E0E-45D67D57E18E}.Development|Default.ActiveCfg = Development
+		{B9B99154-EA78-4112-8E0E-45D67D57E18E}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A9083D69-BB32-416B-8AAF-4A920F7C3A6B}
+	EndGlobalSection
+EndGlobal

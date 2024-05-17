@@ -1,0 +1,129 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="0bb32688-6f69-45d6-991a-774905f7e3ef" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Db GIUAKY</ID>
+  <Name>Db GIUAKY</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Db GIUAKY</DataSourceID>
+  <Schema>
+    <xs:schema id="Db_x0020_GIUAKY" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Db_x0020_GIUAKY" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="d2e3cd5f-0030-4534-80aa-31cb5b72b629">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_dbGIUAKY" msprop:design-time-name="042f5c85-50c5-4089-b877-58461cfb0f39" msprop:DbTableName="dbGIUAKY" msprop:FriendlyName="dbGIUAKY" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Count_x0020_all" msprop:design-time-name="52adb420-65bd-4d6d-b4d8-49c8db0cd8a6" msprop:DbColumnName="Count all" msprop:FriendlyName="Count all" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="Patient_x0020_ID" msprop:design-time-name="73197779-fa8f-4a35-a815-f79d2d5b31f6" msprop:DbColumnName="Patient ID" msprop:FriendlyName="Patient ID" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Age" msprop:design-time-name="03248c5b-9a3a-47d2-8f77-3ae98af9f77e" msprop:DbColumnName="Age" msprop:FriendlyName="Age" type="xs:double" minOccurs="0" />
+                  <xs:element name="Sex" msprop:design-time-name="38d972c7-a282-406c-91ee-d0c81d380fe9" msprop:DbColumnName="Sex" msprop:FriendlyName="Sex" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Cholesterol" msprop:design-time-name="f75f4176-5250-4045-a771-e94a100f31f0" msprop:DbColumnName="Cholesterol" msprop:FriendlyName="Cholesterol" type="xs:double" minOccurs="0" />
+                  <xs:element name="Blood_x0020_Pressure" msprop:design-time-name="4248dd48-f32a-45f4-8260-c1ab8561613b" msprop:DbColumnName="Blood Pressure" msprop:FriendlyName="Blood Pressure" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Heart_x0020_Rate" msprop:design-time-name="ed003efa-29a6-479f-a466-6cd808bd76ed" msprop:DbColumnName="Heart Rate" msprop:FriendlyName="Heart Rate" type="xs:double" minOccurs="0" />
+                  <xs:element name="Diabetes" msprop:design-time-name="fbabd973-0f96-4a0d-8637-d27f465b3938" msprop:DbColumnName="Diabetes" msprop:FriendlyName="Diabetes" type="xs:double" minOccurs="0" />
+                  <xs:element name="Family_x0020_History" msprop:design-time-name="e30538e8-f618-491c-9b86-84011a2f7822" msprop:DbColumnName="Family History" msprop:FriendlyName="Family History" type="xs:double" minOccurs="0" />
+                  <xs:element name="Smoking" msprop:design-time-name="3a43127d-bf4f-4f73-82e3-6d60331be352" msprop:DbColumnName="Smoking" msprop:FriendlyName="Smoking" type="xs:double" minOccurs="0" />
+                  <xs:element name="Obesity" msprop:design-time-name="26032ea4-15b2-4da4-ba1a-17195d2804d7" msprop:DbColumnName="Obesity" msprop:FriendlyName="Obesity" type="xs:double" minOccurs="0" />
+                  <xs:element name="Alcohol_x0020_Consumption" msprop:design-time-name="9561e935-d861-46bd-a8a2-b355c900c066" msprop:DbColumnName="Alcohol Consumption" msprop:FriendlyName="Alcohol Consumption" type="xs:double" minOccurs="0" />
+                  <xs:element name="Exercise_x0020_Hours_x0020_Per_x0020_Week" msprop:design-time-name="2b9e5722-ad20-46ce-a37f-a9f4e7b97c83" msprop:DbColumnName="Exercise Hours Per Week" msprop:FriendlyName="Exercise Hours Per Week" type="xs:double" minOccurs="0" />
+                  <xs:element name="Diet" msprop:design-time-name="a3d1f93d-67ba-49e4-94af-2de26df7c9cb" msprop:DbColumnName="Diet" msprop:FriendlyName="Diet" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Previous_x0020_Heart_x0020_Problems" msprop:design-time-name="c405ab2c-582c-4fbe-8c29-7fec4a856c46" msprop:DbColumnName="Previous Heart Problems" msprop:FriendlyName="Previous Heart Problems" type="xs:double" minOccurs="0" />
+                  <xs:element name="Medication_x0020_Use" msprop:design-time-name="9033a79b-c16e-4bf7-a248-0a471b75f7c0" msprop:DbColumnName="Medication Use" msprop:FriendlyName="Medication Use" type="xs:double" minOccurs="0" />
+                  <xs:element name="Stress_x0020_Level" msprop:design-time-name="375a4bbd-250e-4ac3-9afc-7e21944e2034" msprop:DbColumnName="Stress Level" msprop:FriendlyName="Stress Level" type="xs:double" minOccurs="0" />
+                  <xs:element name="Sedentary_x0020_Hours_x0020_Per_x0020_Day" msprop:design-time-name="a378bff5-ea19-4c13-8ea7-956643ee0758" msprop:DbColumnName="Sedentary Hours Per Day" msprop:FriendlyName="Sedentary Hours Per Day" type="xs:double" minOccurs="0" />
+                  <xs:element name="Income" msprop:design-time-name="6209ed5f-a0e3-487c-a0d1-6c1e7c0e903f" msprop:DbColumnName="Income" msprop:FriendlyName="Income" type="xs:double" minOccurs="0" />
+                  <xs:element name="BMI" msprop:design-time-name="8c1526f8-58f7-4b91-bc5a-375739147648" msprop:DbColumnName="BMI" msprop:FriendlyName="BMI" type="xs:double" minOccurs="0" />
+                  <xs:element name="Triglycerides" msprop:design-time-name="f71f41a6-9a68-4708-97a4-545c33c5c696" msprop:DbColumnName="Triglycerides" msprop:FriendlyName="Triglycerides" type="xs:double" minOccurs="0" />
+                  <xs:element name="Physical_x0020_Activity_x0020_Days_x0020_Per_x0020_Week" msprop:design-time-name="15de4568-6ba9-46b4-9825-ae1db6c30775" msprop:DbColumnName="Physical Activity Days Per Week" msprop:FriendlyName="Physical Activity Days Per Week" type="xs:double" minOccurs="0" />
+                  <xs:element name="Sleep_x0020_Hours_x0020_Per_x0020_Day" msprop:design-time-name="24b25242-c213-4bd5-ba98-6e1d74e7859d" msprop:DbColumnName="Sleep Hours Per Day" msprop:FriendlyName="Sleep Hours Per Day" type="xs:double" minOccurs="0" />
+                  <xs:element name="Country" msprop:design-time-name="24acb7a4-32c2-447a-95fd-d820e5fe6837" msprop:DbColumnName="Country" msprop:FriendlyName="Country" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Continent" msprop:design-time-name="aad12d11-103e-4002-87f6-20b28a48f3eb" msprop:DbColumnName="Continent" msprop:FriendlyName="Continent" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Hemisphere" msprop:design-time-name="2ccb58de-bac3-45b5-8203-d318ac733ed6" msprop:DbColumnName="Hemisphere" msprop:FriendlyName="Hemisphere" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Heart_x0020_Attack_x0020_Risk" msprop:design-time-name="754ae449-bc0a-4180-af9c-2ae03aab62f0" msprop:DbColumnName="Heart Attack Risk" msprop:FriendlyName="Heart Attack Risk" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <Db_x0020_GIUAKY xmlns="" />
+  </Schema>
+</DataSourceView>

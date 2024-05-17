@@ -1,0 +1,698 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="26d00521-04cd-4f81-ad7c-d7a66fccbe84" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Db GIUAKY</ID>
+  <Name>Db GIUAKY</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_dbGIUAKY</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="ba5061fb-f510-4129-aeba-17a2ddcbf2e4">
+    <DataSourceViewID>Db GIUAKY</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="6717263c-6e55-4873-b318-3637e8f03b98">
+      <ID>Age</ID>
+      <Name>Age</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="386b380b-d2e3-4da9-a7eb-03ebcab40839">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="afcc5a03-b13c-423a-897c-8c3c32db61b4">
+            <TableID>dbo_dbGIUAKY</TableID>
+            <ColumnID>Age</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="29cba3b0-959d-4494-8cd2-abd3bfd283ae">
+      <ID>Alcohol Consumption</ID>
+      <Name>Alcohol Consumption</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0723cc1b-788d-47f5-a014-76cb53ed9d53">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="38a07078-04b4-4032-9a08-8d450c37ccaa">
+            <TableID>dbo_dbGIUAKY</TableID>
+            <ColumnID>Alcohol_x0020_Consumption</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="3c681441-7cb3-4f9f-bc94-06bea133d93e">
+      <ID>Blood Pressure</ID>
+      <Name>Blood Pressure</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="641397b1-10e7-4c71-9aae-33a505201385">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ac68ac26-ab74-40c8-8ad8-cabddf61f1bf">
+            <TableID>dbo_dbGIUAKY</TableID>
+            <ColumnID>Blood_x0020_Pressure</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="7e2ce843-7eb0-48e9-9e63-2f160b50f81c">
+      <ID>BMI</ID>
+      <Name>BMI</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="189847bc-4246-4def-a7d9-4a8f64ee85ea">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="618684ff-5f77-40f9-8f23-b176fdbd09cd">
+            <TableID>dbo_dbGIUAKY</TableID>
+            <ColumnID>BMI</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="8c8872d7-d7bd-4793-863b-99c05223ef0c">
+      <ID>Continent</ID>
+      <Name>Continent</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="330160ce-93d6-4721-aaa9-f8eb2d7277d1">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6be708ce-4b98-4522-97cf-210e59319339">
+            <TableID>dbo_dbGIUAKY</TableID>
+            <ColumnID>Continent</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="99cb37a8-ea64-4591-8dd6-54d962b51fcf">
+      <ID>Count All</ID>
+      <Name>Count All</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f8a15432-3d6b-4a94-9716-e4fa012bc61e">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="43cd2833-4556-49b0-a364-b27d330b5c54">
+            <TableID>dbo_dbGIUAKY</TableID>
+            <ColumnID>Count_x0020_all</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="f238fc62-5577-49c4-b0fc-51b0c2997b86">
+      <ID>Country</ID>
+      <Name>Country</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="028e05d5-70e0-4979-a931-803de56bce42">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6be8ab03-b666-4f76-9f34-f9f5819e4c78">
+            <TableID>dbo_dbGIUAKY</TableID>
+            <ColumnID>Country</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="ab6ea309-ac71-4a60-9267-2107bb8e583b">
+      <ID>Cholesterol</ID>
+      <Name>Cholesterol</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a5212659-01ca-4920-aa46-92c56278e50f">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5c791803-b6c6-499f-9752-086216e0d243">
+            <TableID>dbo_dbGIUAKY</TableID>
+            <ColumnID>Cholesterol</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="e2cf064f-6c66-4817-b935-dcb6885a892e">
+      <ID>Diabetes</ID>
+      <Name>Diabetes</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="626a0b9b-6456-401f-8ee3-a3e7e0cd337c">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="914388cf-b7b6-4a12-b956-db888af67db2">
+            <TableID>dbo_dbGIUAKY</TableID>
+            <ColumnID>Diabetes</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="804a34d2-72ee-4eae-b7dd-4e77b1039963">
+      <ID>Diet</ID>
+      <Name>Diet</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6da14eb0-ee86-4f0a-bc57-ed1da2d1ee3a">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3aee090b-5102-4d38-b05a-3d73b0492370">
+            <TableID>dbo_dbGIUAKY</TableID>
+            <ColumnID>Diet</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="d5d0f45f-642c-42b0-9191-ef5e46fba22c">
+      <ID>Exercise Hours Per Week</ID>
+      <Name>Exercise Hours Per Week</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d99d53ce-0c50-4418-ac65-0bffbb598749">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f5c51963-e84b-4811-996f-cc01ba998fb1">
+            <TableID>dbo_dbGIUAKY</TableID>
+            <ColumnID>Exercise_x0020_Hours_x0020_Per_x0020_Week</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="91b8da97-a8bf-431b-a3f0-198b9c6aedfe">
+      <ID>Family History</ID>
+      <Name>Family History</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0513117c-6de7-41f1-a9c2-2a8ae3b81c3d">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="79e5a95c-7ad6-4ac2-92c8-ab65eadf0d05">
+            <TableID>dbo_dbGIUAKY</TableID>
+            <ColumnID>Family_x0020_History</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="e8d4441c-e942-4121-b69d-8da3aea93c8c">
+      <ID>Heart Attack Risk</ID>
+      <Name>Heart Attack Risk</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c75d240e-2b69-4f14-8069-d2fb4e0cca01">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6f6ebc70-f52b-486a-a8a3-a86cfa1fd7df">
+            <TableID>dbo_dbGIUAKY</TableID>
+            <ColumnID>Heart_x0020_Attack_x0020_Risk</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="161e2522-280e-4859-8644-b7c8901a507c">
+      <ID>Heart Rate</ID>
+      <Name>Heart Rate</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="79371833-3058-46e2-9e30-0beff47e0452">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0d19cb74-f708-4094-9c87-d0aec528514b">
+            <TableID>dbo_dbGIUAKY</TableID>
+            <ColumnID>Heart_x0020_Rate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="0bb7005f-01fe-4f5c-8a01-58b2869c15bb">
+      <ID>Hemisphere</ID>
+      <Name>Hemisphere</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="71c0b7d1-21ea-4444-b6bc-a2eb78cb269c">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3d9a33dd-75a6-493a-8e53-45a2aaa33d24">
+            <TableID>dbo_dbGIUAKY</TableID>
+            <ColumnID>Hemisphere</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="812f122b-6f70-4552-98c6-a2e9da9e1258">
+      <ID>Income</ID>
+      <Name>Income</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d0725315-8dfe-4ddb-8fd5-2ea99bba3ae5">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8cf2b872-4678-4dce-97bd-b1cda095fa41">
+            <TableID>dbo_dbGIUAKY</TableID>
+            <ColumnID>Income</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="9721d96d-cf89-423b-839c-d641a1793a9a">
+      <ID>Medication Use</ID>
+      <Name>Medication Use</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="649df20c-938d-419e-8a97-96dec83e14c1">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="74b8e43e-54dd-4f6f-a9fd-edef142825bd">
+            <TableID>dbo_dbGIUAKY</TableID>
+            <ColumnID>Medication_x0020_Use</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="8998642f-b79c-4364-9fa9-1715c5522abb">
+      <ID>Obesity</ID>
+      <Name>Obesity</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d5d98f74-b627-45d3-8280-f2cdac68f200">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8fa41c46-0a33-4844-879d-b58034ada0b1">
+            <TableID>dbo_dbGIUAKY</TableID>
+            <ColumnID>Obesity</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="d8a14629-a4bb-47f0-8f65-0a4b3422ad75">
+      <ID>Patient ID</ID>
+      <Name>Patient ID</Name>
+      <IsKey>true</IsKey>
+      <Type>Text</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e7684614-57ce-42e1-8f1d-713c3c246aee">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0e3dbe4d-dbac-43bc-878c-745c67c3a0a7">
+            <TableID>dbo_dbGIUAKY</TableID>
+            <ColumnID>Patient_x0020_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="dfc95a6e-6162-4d2b-b469-73b743364005">
+      <ID>Previous Heart Problems</ID>
+      <Name>Previous Heart Problems</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="06f01572-4254-4b3e-8c94-a15de325785b">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0692f243-eec6-424e-8f7b-a18488d36075">
+            <TableID>dbo_dbGIUAKY</TableID>
+            <ColumnID>Previous_x0020_Heart_x0020_Problems</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="9c6e23b3-d100-40e1-aea9-00797cbb1dc5">
+      <ID>Physical Activity Days Per Week</ID>
+      <Name>Physical Activity Days Per Week</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="208562da-ed9f-40ba-865f-262f144ec774">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0ddb7654-7153-47b3-a989-4376f8a4dba4">
+            <TableID>dbo_dbGIUAKY</TableID>
+            <ColumnID>Physical_x0020_Activity_x0020_Days_x0020_Per_x0020_Week</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="69d4f055-9e84-48ef-b269-e6728662b50c">
+      <ID>Sedentary Hours Per Day</ID>
+      <Name>Sedentary Hours Per Day</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="510ce8ed-f38d-4c13-a5ce-3882da0dee12">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f6077499-fe6d-4a14-bc72-2c4c95974cb3">
+            <TableID>dbo_dbGIUAKY</TableID>
+            <ColumnID>Sedentary_x0020_Hours_x0020_Per_x0020_Day</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="e3882712-6d42-4181-8fd1-9db84784ac7d">
+      <ID>Sex</ID>
+      <Name>Sex</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5c437a13-2605-403c-b71f-9a3fa9c88ab7">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="10305247-7c46-43ee-be9f-9ba7498dcdb8">
+            <TableID>dbo_dbGIUAKY</TableID>
+            <ColumnID>Sex</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="254665db-1272-44ac-8f20-db02e22ad348">
+      <ID>Sleep Hours Per Day</ID>
+      <Name>Sleep Hours Per Day</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ad777478-0076-4036-9a69-37814981c4dd">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a3db6c21-1891-4455-9d78-b9354b53ec22">
+            <TableID>dbo_dbGIUAKY</TableID>
+            <ColumnID>Sleep_x0020_Hours_x0020_Per_x0020_Day</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c9e294cc-08bc-4bc1-ad00-6558cf89a928">
+      <ID>Smoking</ID>
+      <Name>Smoking</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e394d69e-9d94-4fec-9d58-3bdb9634bb60">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8e03388f-b863-4db1-aef7-cdf9dba4a3c6">
+            <TableID>dbo_dbGIUAKY</TableID>
+            <ColumnID>Smoking</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5e486ce1-87de-4fb2-ba09-e299030d9a04">
+      <ID>Stress Level</ID>
+      <Name>Stress Level</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8865f4b0-9258-4b8b-97f9-0e7a0e7ac46c">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4587c5a0-48d6-40f4-b46a-0dc9e0ea0bf9">
+            <TableID>dbo_dbGIUAKY</TableID>
+            <ColumnID>Stress_x0020_Level</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="cbc9bae3-6554-4e28-9e99-e8f164b4dff3">
+      <ID>Triglycerides</ID>
+      <Name>Triglycerides</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fc9f2bf1-6ff7-42bd-93b8-7eec6790063a">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="74216aa5-0f15-432d-8100-95a2c3811db6">
+            <TableID>dbo_dbGIUAKY</TableID>
+            <ColumnID>Triglycerides</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="012d82bb-41aa-4086-9ccb-f0dc55d909c4">
+      <ID>Db GIUAKY</ID>
+      <Name>Db GIUAKY</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Decision_Trees</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="a04f80cb-77dc-4c53-90fc-6d8ae014edb9">
+          <ID>Age</ID>
+          <Name>Age</Name>
+          <SourceColumnID>Age</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="d19b07ca-8a94-4903-a979-669018042173">
+          <ID>Alcohol Consumption</ID>
+          <Name>Alcohol Consumption</Name>
+          <SourceColumnID>Alcohol Consumption</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="3368d46f-b73b-422e-9598-5bf873c31695">
+          <ID>Blood Pressure</ID>
+          <Name>Blood Pressure</Name>
+          <SourceColumnID>Blood Pressure</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="aefed695-7a88-44c9-90f9-2ffb4576267c">
+          <ID>BMI</ID>
+          <Name>BMI</Name>
+          <SourceColumnID>BMI</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="c30cf580-a4a9-4154-be7b-1a330dd73191">
+          <ID>Continent</ID>
+          <Name>Continent</Name>
+          <SourceColumnID>Continent</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="4cdb3d7c-15a6-47c2-bc7d-10129f2a225c">
+          <ID>Count All</ID>
+          <Name>Count All</Name>
+          <SourceColumnID>Count All</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="cad7764d-b0b5-454a-9f52-4dd6a8fc627b">
+          <ID>Country</ID>
+          <Name>Country</Name>
+          <SourceColumnID>Country</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="7e9f8560-2c55-44fb-8655-0d90b28549f3">
+          <ID>Cholesterol</ID>
+          <Name>Cholesterol</Name>
+          <SourceColumnID>Cholesterol</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="409f6615-362e-435a-8e28-e95168c383d5">
+          <ID>Diabetes</ID>
+          <Name>Diabetes</Name>
+          <SourceColumnID>Diabetes</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="e653a000-244b-47a8-a7bf-d590c6d2d078">
+          <ID>Diet</ID>
+          <Name>Diet</Name>
+          <SourceColumnID>Diet</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="16baaf7d-eb30-4a52-8910-c9b55f7181ff">
+          <ID>Exercise Hours Per Week</ID>
+          <Name>Exercise Hours Per Week</Name>
+          <SourceColumnID>Exercise Hours Per Week</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="85b476c1-d863-4b87-98a6-1c4f84a2869e">
+          <ID>Family History</ID>
+          <Name>Family History</Name>
+          <SourceColumnID>Family History</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="c098a51b-9db9-431a-bb14-5b345c32e81f">
+          <ID>Heart Attack Risk</ID>
+          <Name>Heart Attack Risk</Name>
+          <SourceColumnID>Heart Attack Risk</SourceColumnID>
+          <Usage>Predict</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="bd687e3b-fb96-48c0-af12-48074db15fe2">
+          <ID>Heart Rate</ID>
+          <Name>Heart Rate</Name>
+          <SourceColumnID>Heart Rate</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="fce7183c-0606-4802-a45b-3bf0189cec58">
+          <ID>Hemisphere</ID>
+          <Name>Hemisphere</Name>
+          <SourceColumnID>Hemisphere</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="d670cf44-71fa-4baa-bc0f-fd7bc4b0d8b5">
+          <ID>Income</ID>
+          <Name>Income</Name>
+          <SourceColumnID>Income</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="51d2e15c-c146-466a-a2fb-4f31d1e1658e">
+          <ID>Medication Use</ID>
+          <Name>Medication Use</Name>
+          <SourceColumnID>Medication Use</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="f245c280-9337-42ab-8775-136986658f06">
+          <ID>Obesity</ID>
+          <Name>Obesity</Name>
+          <SourceColumnID>Obesity</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="a12b3d80-821d-4adc-a644-5fd321553653">
+          <ID>Patient ID</ID>
+          <Name>Patient ID</Name>
+          <SourceColumnID>Patient ID</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="1aba676e-3f27-46aa-819a-62ac282f16d9">
+          <ID>Previous Heart Problems</ID>
+          <Name>Previous Heart Problems</Name>
+          <SourceColumnID>Previous Heart Problems</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="1738f910-8494-4e90-9b7c-7afb47790d45">
+          <ID>Physical Activity Days Per Week</ID>
+          <Name>Physical Activity Days Per Week</Name>
+          <SourceColumnID>Physical Activity Days Per Week</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="8304b2d5-c11e-46af-9244-cd23538a9436">
+          <ID>Sedentary Hours Per Day</ID>
+          <Name>Sedentary Hours Per Day</Name>
+          <SourceColumnID>Sedentary Hours Per Day</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="7746fea0-d8c2-427c-9bc7-2070bd012307">
+          <ID>Sex</ID>
+          <Name>Sex</Name>
+          <SourceColumnID>Sex</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="46beefa2-e3b0-43ca-a685-9b85b159bdab">
+          <ID>Sleep Hours Per Day</ID>
+          <Name>Sleep Hours Per Day</Name>
+          <SourceColumnID>Sleep Hours Per Day</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="c8f29a62-0568-4fd1-9100-cc13541ebd31">
+          <ID>Smoking</ID>
+          <Name>Smoking</Name>
+          <SourceColumnID>Smoking</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="544d40a0-5463-4bc9-96a9-d14bb8dd4de2">
+          <ID>Stress Level</ID>
+          <Name>Stress Level</Name>
+          <SourceColumnID>Stress Level</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="a1ba7b41-2258-4b93-9ed7-40fc125f9fa1">
+          <ID>Triglycerides</ID>
+          <Name>Triglycerides</Name>
+          <SourceColumnID>Triglycerides</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+</MiningStructure>

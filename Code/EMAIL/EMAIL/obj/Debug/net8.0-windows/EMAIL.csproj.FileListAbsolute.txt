@@ -1,0 +1,17 @@
+F:\CDCSDL\Code\EMAIL\EMAIL\bin\Debug\net8.0-windows\EMAIL.exe
+F:\CDCSDL\Code\EMAIL\EMAIL\bin\Debug\net8.0-windows\EMAIL.deps.json
+F:\CDCSDL\Code\EMAIL\EMAIL\bin\Debug\net8.0-windows\EMAIL.runtimeconfig.json
+F:\CDCSDL\Code\EMAIL\EMAIL\bin\Debug\net8.0-windows\EMAIL.dll
+F:\CDCSDL\Code\EMAIL\EMAIL\bin\Debug\net8.0-windows\EMAIL.pdb
+F:\CDCSDL\Code\EMAIL\EMAIL\obj\Debug\net8.0-windows\EMAIL.Form1.resources
+F:\CDCSDL\Code\EMAIL\EMAIL\obj\Debug\net8.0-windows\EMAIL.csproj.GenerateResource.cache
+F:\CDCSDL\Code\EMAIL\EMAIL\obj\Debug\net8.0-windows\EMAIL.GeneratedMSBuildEditorConfig.editorconfig
+F:\CDCSDL\Code\EMAIL\EMAIL\obj\Debug\net8.0-windows\EMAIL.AssemblyInfoInputs.cache
+F:\CDCSDL\Code\EMAIL\EMAIL\obj\Debug\net8.0-windows\EMAIL.AssemblyInfo.cs
+F:\CDCSDL\Code\EMAIL\EMAIL\obj\Debug\net8.0-windows\EMAIL.csproj.CoreCompileInputs.cache
+F:\CDCSDL\Code\EMAIL\EMAIL\obj\Debug\net8.0-windows\EMAIL.sourcelink.json
+F:\CDCSDL\Code\EMAIL\EMAIL\obj\Debug\net8.0-windows\EMAIL.dll
+F:\CDCSDL\Code\EMAIL\EMAIL\obj\Debug\net8.0-windows\refint\EMAIL.dll
+F:\CDCSDL\Code\EMAIL\EMAIL\obj\Debug\net8.0-windows\EMAIL.pdb
+F:\CDCSDL\Code\EMAIL\EMAIL\obj\Debug\net8.0-windows\EMAIL.genruntimeconfig.cache
+F:\CDCSDL\Code\EMAIL\EMAIL\obj\Debug\net8.0-windows\ref\EMAIL.dll

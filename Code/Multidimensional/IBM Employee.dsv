@@ -1,0 +1,130 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="11a0f352-78e3-4f47-819c-058f80d9ffec" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>IBM Employee</ID>
+  <Name>IBM Employee</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>IBM Employee</DataSourceID>
+  <Schema>
+    <xs:schema id="IBM_x0020_Employee" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="IBM_x0020_Employee" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="3884af86-456c-4f73-a0b6-58696bdbc4aa">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_EmployeeAnanlysis" msprop:design-time-name="c9f76f0c-6430-4ab2-b43d-3cc703db2385" msprop:DbTableName="EmployeeAnanlysis" msprop:FriendlyName="EmployeeAnanlysis" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="1c406858-fc40-4656-ba13-2e3fbb30c9ad" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="Age" msprop:design-time-name="10012348-465d-41b7-9922-3720157a7017" msprop:DbColumnName="Age" msprop:FriendlyName="Age" type="xs:int" />
+                  <xs:element name="Attrition" msprop:design-time-name="cc8301af-1eac-4088-9501-a342f2db382e" msprop:DbColumnName="Attrition" msprop:FriendlyName="Attrition" type="xs:boolean" />
+                  <xs:element name="BusinessTravel" msprop:design-time-name="f598a2e7-aa67-492c-948c-6fb621c1a505" msprop:DbColumnName="BusinessTravel" msprop:FriendlyName="BusinessTravel">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DailyRate" msprop:design-time-name="9bc7fa7e-3ab4-4744-8937-aafbe9f222e4" msprop:DbColumnName="DailyRate" msprop:FriendlyName="DailyRate" type="xs:int" />
+                  <xs:element name="Department" msprop:design-time-name="fd8325d5-550b-483b-a490-6630f32044d8" msprop:DbColumnName="Department" msprop:FriendlyName="Department">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DistanceFromHome" msprop:design-time-name="720a40a0-ead3-401f-8bf6-65be67854001" msprop:DbColumnName="DistanceFromHome" msprop:FriendlyName="DistanceFromHome" type="xs:int" />
+                  <xs:element name="Education" msprop:design-time-name="8395a516-d68b-4b5f-9deb-1a7c527307df" msprop:DbColumnName="Education" msprop:FriendlyName="Education" type="xs:int" />
+                  <xs:element name="EducationField" msprop:design-time-name="3c6a2a76-e1b3-4fb2-b170-81824a582617" msprop:DbColumnName="EducationField" msprop:FriendlyName="EducationField">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="EmployeeCount" msprop:design-time-name="1008e27b-6f55-4f63-b546-a5d45417be2d" msprop:DbColumnName="EmployeeCount" msprop:FriendlyName="EmployeeCount" type="xs:int" />
+                  <xs:element name="EmployeeNumber" msprop:design-time-name="dc735861-9641-4d0f-9656-1a4b099a0618" msprop:DbColumnName="EmployeeNumber" msprop:FriendlyName="EmployeeNumber" type="xs:int" />
+                  <xs:element name="EnvironmentSatisfaction" msprop:design-time-name="1f9f4953-795d-4f65-9933-2cf377d8d8ec" msprop:DbColumnName="EnvironmentSatisfaction" msprop:FriendlyName="EnvironmentSatisfaction" type="xs:int" />
+                  <xs:element name="Gender" msprop:design-time-name="3f3be74c-43dd-4afc-8bb5-4861537cf88e" msprop:DbColumnName="Gender" msprop:FriendlyName="Gender" type="xs:boolean" />
+                  <xs:element name="HourlyRate" msprop:design-time-name="35efe95e-0339-4e6b-91aa-fe743b31a572" msprop:DbColumnName="HourlyRate" msprop:FriendlyName="HourlyRate" type="xs:int" />
+                  <xs:element name="JobInvolvement" msprop:design-time-name="3ef9c769-d85b-48f4-a7fa-b723e1fcf80f" msprop:DbColumnName="JobInvolvement" msprop:FriendlyName="JobInvolvement" type="xs:int" />
+                  <xs:element name="JobLevel" msprop:design-time-name="3c3536ee-d802-4575-8673-c9c20344a402" msprop:DbColumnName="JobLevel" msprop:FriendlyName="JobLevel" type="xs:int" />
+                  <xs:element name="JobRole" msprop:design-time-name="24c01cab-5295-4cfa-9878-a86caf099f77" msprop:DbColumnName="JobRole" msprop:FriendlyName="JobRole">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="JobSatisfaction" msprop:design-time-name="5c7be8b8-c1ba-448b-93b4-e9c84da513d9" msprop:DbColumnName="JobSatisfaction" msprop:FriendlyName="JobSatisfaction" type="xs:int" />
+                  <xs:element name="MaritalStatus" msprop:design-time-name="b3cc89ff-f57d-4aff-9f19-df0741e9bf5e" msprop:DbColumnName="MaritalStatus" msprop:FriendlyName="MaritalStatus">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MonthlyIncome" msprop:design-time-name="78cf2e2c-6c61-4169-a8db-2f864ad671c7" msprop:DbColumnName="MonthlyIncome" msprop:FriendlyName="MonthlyIncome" type="xs:int" />
+                  <xs:element name="MonthlyRate" msprop:design-time-name="27e320b7-001c-46fa-996d-a1ffcebed2e4" msprop:DbColumnName="MonthlyRate" msprop:FriendlyName="MonthlyRate" type="xs:int" />
+                  <xs:element name="NumCompaniesWorked" msprop:design-time-name="a2bc2ff9-e012-44a1-b084-2d74eb2d9727" msprop:DbColumnName="NumCompaniesWorked" msprop:FriendlyName="NumCompaniesWorked" type="xs:int" />
+                  <xs:element name="Over18" msprop:design-time-name="bf806027-05b1-4286-ab69-4cc0b0434c9e" msprop:DbColumnName="Over18" msprop:FriendlyName="Over18" type="xs:boolean" />
+                  <xs:element name="OverTime" msprop:design-time-name="0526194a-bd86-4055-aa15-0fc73635c80a" msprop:DbColumnName="OverTime" msprop:FriendlyName="OverTime" type="xs:boolean" />
+                  <xs:element name="PercentSalaryHike" msprop:design-time-name="b66e9b1d-dac6-4f96-bf8d-cc564575f633" msprop:DbColumnName="PercentSalaryHike" msprop:FriendlyName="PercentSalaryHike" type="xs:int" />
+                  <xs:element name="PerformanceRating" msprop:design-time-name="501165f3-520a-4802-a0de-2bdc52ee5e33" msprop:DbColumnName="PerformanceRating" msprop:FriendlyName="PerformanceRating" type="xs:int" />
+                  <xs:element name="RelationshipSatisfaction" msprop:design-time-name="88090aa0-0207-4ba6-855c-18001a609d47" msprop:DbColumnName="RelationshipSatisfaction" msprop:FriendlyName="RelationshipSatisfaction" type="xs:int" />
+                  <xs:element name="StandardHours" msprop:design-time-name="267b48ed-f651-4cf8-8c83-44dacccde06d" msprop:DbColumnName="StandardHours" msprop:FriendlyName="StandardHours" type="xs:int" />
+                  <xs:element name="StockOptionLevel" msprop:design-time-name="209ca8cf-ca52-49bc-8de0-2d1594cce750" msprop:DbColumnName="StockOptionLevel" msprop:FriendlyName="StockOptionLevel" type="xs:int" />
+                  <xs:element name="TotalWorkingYears" msprop:design-time-name="a6bb48f0-86b9-4760-a4fb-fb8b5e61ee7a" msprop:DbColumnName="TotalWorkingYears" msprop:FriendlyName="TotalWorkingYears" type="xs:int" />
+                  <xs:element name="TrainingTimesLastYear" msprop:design-time-name="927f92cf-4d7f-48f5-ba57-fc1b32f26537" msprop:DbColumnName="TrainingTimesLastYear" msprop:FriendlyName="TrainingTimesLastYear" type="xs:int" />
+                  <xs:element name="WorkLifeBalance" msprop:design-time-name="3f677b4a-c2b6-4074-9813-31f7e02301aa" msprop:DbColumnName="WorkLifeBalance" msprop:FriendlyName="WorkLifeBalance" type="xs:int" />
+                  <xs:element name="YearsAtCompany" msprop:design-time-name="7d0e0d2f-793e-4968-bf0d-a3fab66f8cb5" msprop:DbColumnName="YearsAtCompany" msprop:FriendlyName="YearsAtCompany" type="xs:int" />
+                  <xs:element name="YearsInCurrentRole" msprop:design-time-name="eab0061b-e914-4ced-8765-c8324b879db1" msprop:DbColumnName="YearsInCurrentRole" msprop:FriendlyName="YearsInCurrentRole" type="xs:int" />
+                  <xs:element name="YearsSinceLastPromotion" msprop:design-time-name="8a6c3550-b42c-4123-ab75-33644b9af687" msprop:DbColumnName="YearsSinceLastPromotion" msprop:FriendlyName="YearsSinceLastPromotion" type="xs:int" />
+                  <xs:element name="YearsWithCurrManager" msprop:design-time-name="b701f4ea-96a9-4bcb-8462-dfb755efe9d7" msprop:DbColumnName="YearsWithCurrManager" msprop:FriendlyName="YearsWithCurrManager" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_EmployeeAnanlysis" />
+          <xs:field xpath="Id" />
+        </xs:unique>
+      </xs:element>
+    </xs:schema>
+    <IBM_x0020_Employee xmlns="" />
+  </Schema>
+</DataSourceView>

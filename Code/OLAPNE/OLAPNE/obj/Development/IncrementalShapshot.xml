@@ -1,0 +1,89 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>OLAPNE</Database>
+    <Server>tognoek</Server>
+    <ConnectionString>Data Source=tognoek;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>r+xtf9oHygrEfOU9sTPXnHqar7A=27/03/2024 4:29:56 CH27/03/2024 4:29:55 CH</TimeStamp>
+        <ID>
+          <String>Db SMART STAR</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>fDUIsOL7ToVag8DEoEqIhztozXE=27/03/2024 4:30:42 CH27/03/2024 4:30:42 CH</TimeStamp>
+        <ID>
+          <String>Db SMART STAR</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>FYfaB39LOH1lBCWaIeq5lBKCrk4=03/04/2024 2:02:49 CH27/03/2024 4:31:09 CH</TimeStamp>
+        <ID>
+          <String>Dim Customers</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>6ouYYK7du6a3DNJ92BhEU5+REfk=03/04/2024 2:02:49 CH27/03/2024 4:31:09 CH</TimeStamp>
+        <ID>
+          <String>Dim Products</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>dKoc5vUVATdlEjJR7KesBzG22dE=03/04/2024 2:39:45 CH27/03/2024 4:31:09 CH</TimeStamp>
+        <ID>
+          <String>Dim Time</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>tgsrnpFC1YFAY73hvQ/yZLUWZO8=03/04/2024 2:02:49 CH27/03/2024 4:31:09 CH</TimeStamp>
+        <ID>
+          <String>Dim Locations</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>jLumrfQfkq3shOxQq0IRFkJRu6E=03/04/2024 2:02:49 CH27/03/2024 4:31:09 CH</TimeStamp>
+        <ID>
+          <String>Fact Oders</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>uGKOBXSNWwiscBSgnS7R18JmVqw=27/03/2024 4:37:22 CH27/03/2024 4:31:09 CHE+rQD7j0IC7xKm82tfs8iraHgEI=27/03/2024 4:31:10 CH27/03/2024 4:31:09 CH</TimeStamp>
+        <ID>
+          <String>Db SMART STAR</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>NOHBXZg8z2nf6cxEKx1PWZNIH14=27/03/2024 4:21:21 CH27/03/2024 4:21:21 CH</TimeStamp>
+      <ID>
+        <String>OLAPNE</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2024-04-03T08:56:55.206667Z</LastDeployed>
+</DeploymentSnapshot>

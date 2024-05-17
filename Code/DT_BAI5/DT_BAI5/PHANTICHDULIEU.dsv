@@ -1,0 +1,121 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="774f730b-32e6-41fb-aa52-47acc21cbbb2" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>PHANTICHDULIEU</ID>
+  <Name>PHANTICHDULIEU</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>PHANTICHDULIEU</DataSourceID>
+  <Schema>
+    <xs:schema id="PHANTICHDULIEU" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="PHANTICHDULIEU" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="f6ff7992-0ab2-46ad-be43-b84daf6302c8">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_DATASET" msprop:DbTableName="DATASET" msprop:FriendlyName="DATASET" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="67369a39-f6a3-4347-aab9-8063c55bca12">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID" msprop:FriendlyName="ID" msprop:DbColumnName="ID" msprop:design-time-name="2b417aa6-f064-41fa-8633-ee7f25b08e91" type="xs:double" minOccurs="0" />
+                  <xs:element name="Marital_x0020_Status" msprop:FriendlyName="Marital Status" msprop:DbColumnName="Marital Status" msprop:design-time-name="1a85dfc1-1181-4a51-bcf9-a15050d675b0" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Gender" msprop:FriendlyName="Gender" msprop:DbColumnName="Gender" msprop:design-time-name="985dcc6d-1990-4185-8304-67cb32710230" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Yearly_x0020_Income" msprop:FriendlyName="Yearly Income" msprop:DbColumnName="Yearly Income" msprop:design-time-name="c658ca8e-749c-4556-adfc-1f2d98ca79fb" type="xs:double" minOccurs="0" />
+                  <xs:element name="Children" msprop:FriendlyName="Children" msprop:DbColumnName="Children" msprop:design-time-name="f2b4d5df-3481-4b2a-b5be-b6721f10b358" type="xs:double" minOccurs="0" />
+                  <xs:element name="Education" msprop:FriendlyName="Education" msprop:DbColumnName="Education" msprop:design-time-name="5f7d7f4c-7735-46cb-8b9e-545107d176a5" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Occupation" msprop:FriendlyName="Occupation" msprop:DbColumnName="Occupation" msprop:design-time-name="57bbf978-1d8f-4be7-9e6f-e50565e36feb" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Home_x0020_Owner" msprop:FriendlyName="Home Owner" msprop:DbColumnName="Home Owner" msprop:design-time-name="7c38f1b9-00c1-40f5-ac39-f60ec8ecd5db" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Cars" msprop:FriendlyName="Cars" msprop:DbColumnName="Cars" msprop:design-time-name="337a360b-e94c-48b5-9e0d-6281afa6c3da" type="xs:double" minOccurs="0" />
+                  <xs:element name="Commute_x0020_Distance" msprop:FriendlyName="Commute Distance" msprop:DbColumnName="Commute Distance" msprop:design-time-name="2008d70b-9646-4351-9213-be37f5b9b563" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Region" msprop:FriendlyName="Region" msprop:DbColumnName="Region" msprop:design-time-name="bfe4c561-854f-40ef-8d1f-1586b16b7a71" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Age" msprop:FriendlyName="Age" msprop:DbColumnName="Age" msprop:design-time-name="bb1cebc7-8da7-4e49-900d-05f8853e4f28" type="xs:double" minOccurs="0" />
+                  <xs:element name="BikeBuyer" msprop:FriendlyName="BikeBuyer" msprop:DbColumnName="BikeBuyer" msprop:design-time-name="638fe3c9-85df-4470-b585-6ed1e26a5554" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <PHANTICHDULIEU xmlns="" />
+  </Schema>
+</DataSourceView>

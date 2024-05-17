@@ -1,0 +1,170 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="678dd963-246d-4996-ad84-7beaecaf8f7c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Tb DATASET</ID>
+  <Name>Tb DATASET</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="e448ebfa-9bcc-491a-a7a0-66a810da40b2">
+    <DataSourceViewID>Db Kiem Tra</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="283e3957-4fbd-487b-8ab4-3d86c138ed48">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="092adae6-8a88-40d5-969e-f97512114ea0">
+      <ID>Count All</ID>
+      <Name>Count All</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cd5ac132-d6aa-437c-b5c5-8e92fc3b5457">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="955b8782-841e-4d24-abc0-e0a2741f6a66">
+            <TableID>dbo_tbDATASET</TableID>
+            <ColumnID>Count_x0020_all</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="aa7523a8-9651-4e6d-a0ec-a6298e01af99">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="824d146c-e728-46ff-a842-e9fc2d6e21a8">
+            <TableID>dbo_tbDATASET</TableID>
+            <ColumnID>id</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="a1aa474c-3870-4fcf-aefc-a9218b1f8d48">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b7301392-81d0-433b-a454-e6315a9d03ba">
+            <TableID>dbo_tbDATASET</TableID>
+            <ColumnID>age</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="606f7392-d790-4c96-ae63-77271c788f5b">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cef07419-69b5-4a04-9a90-2a773ab2113d">
+            <TableID>dbo_tbDATASET</TableID>
+            <ColumnID>gender</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="708c4658-0b4f-4af3-9a2d-364dc89dfaa2">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7d1ab5d9-04cc-4c9c-afc1-faa09ce00e0f">
+            <TableID>dbo_tbDATASET</TableID>
+            <ColumnID>income</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="179dcb5c-ef5c-490a-8f9a-4e4c621b0d36">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9b63a5f5-25da-4adf-9693-cf3832fd09ee">
+            <TableID>dbo_tbDATASET</TableID>
+            <ColumnID>education</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="f138bdb4-0d1e-4213-9269-79094d6f203f">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="47a31957-2b0d-455c-ab2f-712f538de566">
+            <TableID>dbo_tbDATASET</TableID>
+            <ColumnID>region</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="046e6b72-3bde-4ee8-aaf8-92900e258c73">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3b2abbc2-5616-4928-93a6-0cd8f6e800b7">
+            <TableID>dbo_tbDATASET</TableID>
+            <ColumnID>loyalty_status</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="7182395c-4e59-41cb-ba97-fbc339b36154">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9639cc88-3ec2-4e55-84cf-ea82ba70b521">
+            <TableID>dbo_tbDATASET</TableID>
+            <ColumnID>purchase_frequency</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="2e872c6b-74cc-47e7-9d7b-264e0b41ddc3">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d186efc3-607f-40af-95e2-7e0eeef96eec">
+            <TableID>dbo_tbDATASET</TableID>
+            <ColumnID>purchase_amount</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="93720842-fb79-4761-948c-1b5839e62ff0">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b48dce79-c06f-41fd-8bcf-89c97164349b">
+            <TableID>dbo_tbDATASET</TableID>
+            <ColumnID>product_category</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="de646233-dcd0-4181-8e17-7cb5637e3988">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a6ea941d-96e2-4673-a5da-a6ef9f99b509">
+            <TableID>dbo_tbDATASET</TableID>
+            <ColumnID>promotion_usage</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="2911e611-68f1-4445-9a69-0d22e8a09717">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5197d6cb-3810-45cf-ac9c-49cb7d45ceae">
+            <TableID>dbo_tbDATASET</TableID>
+            <ColumnID>satisfaction_score</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="b49f2b01-7875-4643-b31d-76ada846c5ca">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="0545711e-4b64-4434-ba1d-21e9422f9778">
+          <TableID>dbo_tbDATASET</TableID>
+          <ColumnID>Count_x0020_all</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

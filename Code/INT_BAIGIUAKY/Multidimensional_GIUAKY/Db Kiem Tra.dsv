@@ -1,0 +1,113 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1b91a830-3352-42ea-a6c4-69a2d1eaed80" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Db Kiem Tra</ID>
+  <Name>Db Kiem Tra</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:NameMatchingCriteria</Name>
+      <Value>1</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Db Kiem Tra</DataSourceID>
+  <Schema>
+    <xs:schema id="Db_x0020_Kiem_x0020_Tra" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Db_x0020_Kiem_x0020_Tra" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="17a06035-518f-4e22-b24d-21b3aa9ed4fa">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_tbDATASET" msprop:design-time-name="2111197e-fa24-465b-9fbe-f432d7dd5134" msprop:DbTableName="tbDATASET" msprop:FriendlyName="tbDATASET" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Count_x0020_all" msprop:design-time-name="978655c5-d24b-453d-a3a4-fef15d51ecc3" msprop:DbColumnName="Count all" msprop:FriendlyName="Count all" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="id" msprop:design-time-name="e229da7c-65f9-407b-af37-64de35632783" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:double" minOccurs="0" />
+                  <xs:element name="age" msprop:design-time-name="5b33d183-d37a-4cc0-afbc-9656c167f684" msprop:DbColumnName="age" msprop:FriendlyName="age" type="xs:double" minOccurs="0" />
+                  <xs:element name="gender" msprop:design-time-name="c9463d83-67e5-410a-ba21-38de875a20d7" msprop:DbColumnName="gender" msprop:FriendlyName="gender" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="income" msprop:design-time-name="e8cbf45b-4dcb-4b92-9f26-9916a261c4e8" msprop:DbColumnName="income" msprop:FriendlyName="income" type="xs:double" minOccurs="0" />
+                  <xs:element name="education" msprop:design-time-name="871a2fbe-9c25-4d65-982a-cc62a654f1aa" msprop:DbColumnName="education" msprop:FriendlyName="education" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="region" msprop:design-time-name="3d26ec85-d0df-42f6-bdbe-b03e816287d7" msprop:DbColumnName="region" msprop:FriendlyName="region" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="loyalty_status" msprop:design-time-name="f49f3acf-4477-4de4-8243-b8d90a415850" msprop:DbColumnName="loyalty_status" msprop:FriendlyName="loyalty_status" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="purchase_frequency" msprop:design-time-name="d29b4b4b-7e79-4634-a344-ae0ba90bac96" msprop:DbColumnName="purchase_frequency" msprop:FriendlyName="purchase_frequency" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="purchase_amount" msprop:design-time-name="ef850f0e-1642-493f-9c0f-f704eb0911be" msprop:DbColumnName="purchase_amount" msprop:FriendlyName="purchase_amount" type="xs:double" minOccurs="0" />
+                  <xs:element name="product_category" msprop:design-time-name="b35700ca-6f7a-4c28-b7a6-2df247b70f7e" msprop:DbColumnName="product_category" msprop:FriendlyName="product_category" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="promotion_usage" msprop:design-time-name="1de9fea4-86fe-444a-9b25-f1676952017c" msprop:DbColumnName="promotion_usage" msprop:FriendlyName="promotion_usage" type="xs:double" minOccurs="0" />
+                  <xs:element name="satisfaction_score" msprop:design-time-name="f3a65966-b8db-4257-9c07-73e46a668738" msprop:DbColumnName="satisfaction_score" msprop:FriendlyName="satisfaction_score" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <Db_x0020_Kiem_x0020_Tra xmlns="" />
+  </Schema>
+</DataSourceView>

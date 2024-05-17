@@ -1,0 +1,1093 @@
+﻿<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Multidimensional</ID>
+  <Name>Multidimensional</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <LastUpdate>0001-01-01T00:00:00Z</LastUpdate>
+  <DataSourceImpersonationInfo>
+    <ImpersonationMode>Default</ImpersonationMode>
+    <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
+  </DataSourceImpersonationInfo>
+  <MiningStructures>
+    <MiningStructure>
+      <ID>Employee Ananlysis</ID>
+      <Name>Employee Ananlysis</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+          <Value>dbo_EmployeeAnanlysis</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+          <Value>
+            <dds xmlns="">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-12535" scrolltop="-979" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="29528" y="16986" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <font>
+                  <ddsxmlobjectstreamwrapper binary="01a30000900144420100065461686f6d61" />
+                </font>
+                <mouseicon>
+                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                </mouseicon>
+              </diagram>
+              <layoutmanager>
+                <ddsxmlobj />
+              </layoutmanager>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="EmployeeAnanlysis" left="-9611" top="-5556" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4949" height="16113" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e000055130000f13e0000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_EmployeeAnanlysis" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+            </dds>
+          </Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>-12535</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>-979</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>-9611</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>-5556</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>IBM Employee</DataSourceViewID>
+      </Source>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Age</ID>
+          <Name>Age</Name>
+          <Type>Long</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>Age</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Attrition</ID>
+          <Name>Attrition</Name>
+          <Type>Boolean</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Boolean</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>Attrition</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Business Travel</ID>
+          <Name>Business Travel</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>255</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>BusinessTravel</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Daily Rate</ID>
+          <Name>Daily Rate</Name>
+          <Type>Long</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>DailyRate</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Department</ID>
+          <Name>Department</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>255</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>Department</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Distance From Home</ID>
+          <Name>Distance From Home</Name>
+          <Type>Long</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>DistanceFromHome</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Education</ID>
+          <Name>Education</Name>
+          <Type>Long</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>Education</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Education Field</ID>
+          <Name>Education Field</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>255</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>EducationField</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Employee Count</ID>
+          <Name>Employee Count</Name>
+          <Type>Long</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>EmployeeCount</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Employee Number</ID>
+          <Name>Employee Number</Name>
+          <Type>Long</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>EmployeeNumber</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Environment Satisfaction</ID>
+          <Name>Environment Satisfaction</Name>
+          <Type>Long</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>EnvironmentSatisfaction</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Gender</ID>
+          <Name>Gender</Name>
+          <Type>Boolean</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Boolean</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>Gender</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Hourly Rate</ID>
+          <Name>Hourly Rate</Name>
+          <Type>Long</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>HourlyRate</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Id</ID>
+          <Name>Id</Name>
+          <IsKey>true</IsKey>
+          <Type>Long</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>Id</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Job Involvement</ID>
+          <Name>Job Involvement</Name>
+          <Type>Long</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>JobInvolvement</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Job Level</ID>
+          <Name>Job Level</Name>
+          <Type>Long</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>JobLevel</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Job Role</ID>
+          <Name>Job Role</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>255</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>JobRole</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Job Satisfaction</ID>
+          <Name>Job Satisfaction</Name>
+          <Type>Long</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>JobSatisfaction</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Marital Status</ID>
+          <Name>Marital Status</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>255</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>MaritalStatus</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Monthly Income</ID>
+          <Name>Monthly Income</Name>
+          <Type>Long</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>MonthlyIncome</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Monthly Rate</ID>
+          <Name>Monthly Rate</Name>
+          <Type>Long</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>MonthlyRate</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Num Companies Worked</ID>
+          <Name>Num Companies Worked</Name>
+          <Type>Long</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>NumCompaniesWorked</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Over18</ID>
+          <Name>Over18</Name>
+          <Type>Boolean</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Boolean</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>Over18</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Over Time</ID>
+          <Name>Over Time</Name>
+          <Type>Boolean</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Boolean</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>OverTime</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Percent Salary Hike</ID>
+          <Name>Percent Salary Hike</Name>
+          <Type>Long</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>PercentSalaryHike</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Performance Rating</ID>
+          <Name>Performance Rating</Name>
+          <Type>Long</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>PerformanceRating</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Relationship Satisfaction</ID>
+          <Name>Relationship Satisfaction</Name>
+          <Type>Long</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>RelationshipSatisfaction</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Standard Hours</ID>
+          <Name>Standard Hours</Name>
+          <Type>Long</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>StandardHours</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Stock Option Level</ID>
+          <Name>Stock Option Level</Name>
+          <Type>Long</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>StockOptionLevel</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Total Working Years</ID>
+          <Name>Total Working Years</Name>
+          <Type>Long</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>TotalWorkingYears</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Training Times Last Year</ID>
+          <Name>Training Times Last Year</Name>
+          <Type>Long</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>TrainingTimesLastYear</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Work Life Balance</ID>
+          <Name>Work Life Balance</Name>
+          <Type>Long</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>WorkLifeBalance</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Years At Company</ID>
+          <Name>Years At Company</Name>
+          <Type>Long</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>YearsAtCompany</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Years In Current Role</ID>
+          <Name>Years In Current Role</Name>
+          <Type>Long</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>YearsInCurrentRole</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Years Since Last Promotion</ID>
+          <Name>Years Since Last Promotion</Name>
+          <Type>Long</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>YearsSinceLastPromotion</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Years With Curr Manager</ID>
+          <Name>Years With Curr Manager</Name>
+          <Type>Long</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_EmployeeAnanlysis</TableID>
+                <ColumnID>YearsWithCurrManager</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+      <MiningModels>
+        <MiningModel>
+          <ID>Employee Ananlysis</ID>
+          <Name>Employee Ananlysis</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Algorithm>Microsoft_Decision_Trees</Algorithm>
+          <Columns>
+            <Column>
+              <ID>Age</ID>
+              <Name>Age</Name>
+              <SourceColumnID>Age</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Attrition</ID>
+              <Name>Attrition</Name>
+              <SourceColumnID>Attrition</SourceColumnID>
+              <Usage>Predict</Usage>
+            </Column>
+            <Column>
+              <ID>Business Travel</ID>
+              <Name>Business Travel</Name>
+              <SourceColumnID>Business Travel</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Daily Rate</ID>
+              <Name>Daily Rate</Name>
+              <SourceColumnID>Daily Rate</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Department</ID>
+              <Name>Department</Name>
+              <SourceColumnID>Department</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Distance From Home</ID>
+              <Name>Distance From Home</Name>
+              <SourceColumnID>Distance From Home</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Education</ID>
+              <Name>Education</Name>
+              <SourceColumnID>Education</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Education Field</ID>
+              <Name>Education Field</Name>
+              <SourceColumnID>Education Field</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Employee Count</ID>
+              <Name>Employee Count</Name>
+              <SourceColumnID>Employee Count</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Employee Number</ID>
+              <Name>Employee Number</Name>
+              <SourceColumnID>Employee Number</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Environment Satisfaction</ID>
+              <Name>Environment Satisfaction</Name>
+              <SourceColumnID>Environment Satisfaction</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Gender</ID>
+              <Name>Gender</Name>
+              <SourceColumnID>Gender</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Hourly Rate</ID>
+              <Name>Hourly Rate</Name>
+              <SourceColumnID>Hourly Rate</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Id</ID>
+              <Name>Id</Name>
+              <SourceColumnID>Id</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+            <Column>
+              <ID>Job Involvement</ID>
+              <Name>Job Involvement</Name>
+              <SourceColumnID>Job Involvement</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Job Level</ID>
+              <Name>Job Level</Name>
+              <SourceColumnID>Job Level</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Job Role</ID>
+              <Name>Job Role</Name>
+              <SourceColumnID>Job Role</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Job Satisfaction</ID>
+              <Name>Job Satisfaction</Name>
+              <SourceColumnID>Job Satisfaction</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Marital Status</ID>
+              <Name>Marital Status</Name>
+              <SourceColumnID>Marital Status</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Monthly Income</ID>
+              <Name>Monthly Income</Name>
+              <SourceColumnID>Monthly Income</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Monthly Rate</ID>
+              <Name>Monthly Rate</Name>
+              <SourceColumnID>Monthly Rate</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Num Companies Worked</ID>
+              <Name>Num Companies Worked</Name>
+              <SourceColumnID>Num Companies Worked</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Over18</ID>
+              <Name>Over18</Name>
+              <SourceColumnID>Over18</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Over Time</ID>
+              <Name>Over Time</Name>
+              <SourceColumnID>Over Time</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Percent Salary Hike</ID>
+              <Name>Percent Salary Hike</Name>
+              <SourceColumnID>Percent Salary Hike</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Performance Rating</ID>
+              <Name>Performance Rating</Name>
+              <SourceColumnID>Performance Rating</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Relationship Satisfaction</ID>
+              <Name>Relationship Satisfaction</Name>
+              <SourceColumnID>Relationship Satisfaction</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Standard Hours</ID>
+              <Name>Standard Hours</Name>
+              <SourceColumnID>Standard Hours</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Stock Option Level</ID>
+              <Name>Stock Option Level</Name>
+              <SourceColumnID>Stock Option Level</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Total Working Years</ID>
+              <Name>Total Working Years</Name>
+              <SourceColumnID>Total Working Years</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Training Times Last Year</ID>
+              <Name>Training Times Last Year</Name>
+              <SourceColumnID>Training Times Last Year</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Work Life Balance</ID>
+              <Name>Work Life Balance</Name>
+              <SourceColumnID>Work Life Balance</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Years At Company</ID>
+              <Name>Years At Company</Name>
+              <SourceColumnID>Years At Company</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Years In Current Role</ID>
+              <Name>Years In Current Role</Name>
+              <SourceColumnID>Years In Current Role</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Years Since Last Promotion</ID>
+              <Name>Years Since Last Promotion</Name>
+              <SourceColumnID>Years Since Last Promotion</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Years With Curr Manager</ID>
+              <Name>Years With Curr Manager</Name>
+              <SourceColumnID>Years With Curr Manager</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+          </Columns>
+        </MiningModel>
+      </MiningModels>
+      <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+    </MiningStructure>
+  </MiningStructures>
+  <DataSources>
+    <DataSource xsi:type="RelationalDataSource">
+      <ID>IBM Employee</ID>
+      <Name>IBM Employee</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <ConnectionString>Provider=SQLNCLI11.1;Data Source=TOGNOEK\MSSQLSERVER_2019;Integrated Security=SSPI;Initial Catalog=IBM_Employee</ConnectionString>
+      <ConnectionStringSecurity>Unchanged</ConnectionStringSecurity>
+      <ImpersonationInfo>
+        <ImpersonationMode>ImpersonateServiceAccount</ImpersonationMode>
+        <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
+      </ImpersonationInfo>
+      <Timeout>PT0S</Timeout>
+    </DataSource>
+  </DataSources>
+  <DataSourceViews>
+    <DataSourceView>
+      <ID>IBM Employee</ID>
+      <Name>IBM Employee</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+          <Value>_ALL_TABLES_</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+          <Value></Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+          <Value>
+            <Layouts xmlns="">
+              <Diagram>
+                <Name>_ALL_TABLES_</Name>
+                <DiagramLayout />
+                <ShowRelationshipNames>False</ShowRelationshipNames>
+                <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+                <DiagramViewPortLeft>0</DiagramViewPortLeft>
+                <DiagramViewPortTop>0</DiagramViewPortTop>
+                <DiagramBoundingLeft>0</DiagramBoundingLeft>
+                <DiagramBoundingTop>0</DiagramBoundingTop>
+                <DiagramZoom>100</DiagramZoom>
+              </Diagram>
+            </Layouts>
+          </Value>
+        </Annotation>
+      </Annotations>
+      <DataSourceID>IBM Employee</DataSourceID>
+      <Schema>
+        <xs:schema id="IBM_x0020_Employee" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+          <xs:element name="IBM_x0020_Employee" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="3884af86-456c-4f73-a0b6-58696bdbc4aa">
+            <xs:complexType>
+              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="dbo_EmployeeAnanlysis" msprop:design-time-name="c9f76f0c-6430-4ab2-b43d-3cc703db2385" msprop:FriendlyName="EmployeeAnanlysis" msprop:DbSchemaName="dbo" msprop:DbTableName="EmployeeAnanlysis" msprop:TableType="Table">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="1c406858-fc40-4656-ba13-2e3fbb30c9ad" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                      <xs:element name="Age" msprop:design-time-name="10012348-465d-41b7-9922-3720157a7017" msprop:DbColumnName="Age" msprop:FriendlyName="Age" type="xs:int" />
+                      <xs:element name="Attrition" msprop:design-time-name="cc8301af-1eac-4088-9501-a342f2db382e" msprop:DbColumnName="Attrition" msprop:FriendlyName="Attrition" type="xs:boolean" />
+                      <xs:element name="BusinessTravel" msprop:design-time-name="f598a2e7-aa67-492c-948c-6fb621c1a505" msprop:DbColumnName="BusinessTravel" msprop:FriendlyName="BusinessTravel">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="255" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="DailyRate" msprop:design-time-name="9bc7fa7e-3ab4-4744-8937-aafbe9f222e4" msprop:DbColumnName="DailyRate" msprop:FriendlyName="DailyRate" type="xs:int" />
+                      <xs:element name="Department" msprop:design-time-name="fd8325d5-550b-483b-a490-6630f32044d8" msprop:DbColumnName="Department" msprop:FriendlyName="Department">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="255" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="DistanceFromHome" msprop:design-time-name="720a40a0-ead3-401f-8bf6-65be67854001" msprop:DbColumnName="DistanceFromHome" msprop:FriendlyName="DistanceFromHome" type="xs:int" />
+                      <xs:element name="Education" msprop:design-time-name="8395a516-d68b-4b5f-9deb-1a7c527307df" msprop:DbColumnName="Education" msprop:FriendlyName="Education" type="xs:int" />
+                      <xs:element name="EducationField" msprop:design-time-name="3c6a2a76-e1b3-4fb2-b170-81824a582617" msprop:DbColumnName="EducationField" msprop:FriendlyName="EducationField">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="255" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="EmployeeCount" msprop:design-time-name="1008e27b-6f55-4f63-b546-a5d45417be2d" msprop:DbColumnName="EmployeeCount" msprop:FriendlyName="EmployeeCount" type="xs:int" />
+                      <xs:element name="EmployeeNumber" msprop:design-time-name="dc735861-9641-4d0f-9656-1a4b099a0618" msprop:DbColumnName="EmployeeNumber" msprop:FriendlyName="EmployeeNumber" type="xs:int" />
+                      <xs:element name="EnvironmentSatisfaction" msprop:design-time-name="1f9f4953-795d-4f65-9933-2cf377d8d8ec" msprop:DbColumnName="EnvironmentSatisfaction" msprop:FriendlyName="EnvironmentSatisfaction" type="xs:int" />
+                      <xs:element name="Gender" msprop:design-time-name="3f3be74c-43dd-4afc-8bb5-4861537cf88e" msprop:DbColumnName="Gender" msprop:FriendlyName="Gender" type="xs:boolean" />
+                      <xs:element name="HourlyRate" msprop:design-time-name="35efe95e-0339-4e6b-91aa-fe743b31a572" msprop:DbColumnName="HourlyRate" msprop:FriendlyName="HourlyRate" type="xs:int" />
+                      <xs:element name="JobInvolvement" msprop:design-time-name="3ef9c769-d85b-48f4-a7fa-b723e1fcf80f" msprop:DbColumnName="JobInvolvement" msprop:FriendlyName="JobInvolvement" type="xs:int" />
+                      <xs:element name="JobLevel" msprop:design-time-name="3c3536ee-d802-4575-8673-c9c20344a402" msprop:DbColumnName="JobLevel" msprop:FriendlyName="JobLevel" type="xs:int" />
+                      <xs:element name="JobRole" msprop:design-time-name="24c01cab-5295-4cfa-9878-a86caf099f77" msprop:DbColumnName="JobRole" msprop:FriendlyName="JobRole">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="255" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="JobSatisfaction" msprop:design-time-name="5c7be8b8-c1ba-448b-93b4-e9c84da513d9" msprop:DbColumnName="JobSatisfaction" msprop:FriendlyName="JobSatisfaction" type="xs:int" />
+                      <xs:element name="MaritalStatus" msprop:design-time-name="b3cc89ff-f57d-4aff-9f19-df0741e9bf5e" msprop:DbColumnName="MaritalStatus" msprop:FriendlyName="MaritalStatus">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="255" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="MonthlyIncome" msprop:design-time-name="78cf2e2c-6c61-4169-a8db-2f864ad671c7" msprop:DbColumnName="MonthlyIncome" msprop:FriendlyName="MonthlyIncome" type="xs:int" />
+                      <xs:element name="MonthlyRate" msprop:design-time-name="27e320b7-001c-46fa-996d-a1ffcebed2e4" msprop:DbColumnName="MonthlyRate" msprop:FriendlyName="MonthlyRate" type="xs:int" />
+                      <xs:element name="NumCompaniesWorked" msprop:design-time-name="a2bc2ff9-e012-44a1-b084-2d74eb2d9727" msprop:DbColumnName="NumCompaniesWorked" msprop:FriendlyName="NumCompaniesWorked" type="xs:int" />
+                      <xs:element name="Over18" msprop:design-time-name="bf806027-05b1-4286-ab69-4cc0b0434c9e" msprop:DbColumnName="Over18" msprop:FriendlyName="Over18" type="xs:boolean" />
+                      <xs:element name="OverTime" msprop:design-time-name="0526194a-bd86-4055-aa15-0fc73635c80a" msprop:DbColumnName="OverTime" msprop:FriendlyName="OverTime" type="xs:boolean" />
+                      <xs:element name="PercentSalaryHike" msprop:design-time-name="b66e9b1d-dac6-4f96-bf8d-cc564575f633" msprop:DbColumnName="PercentSalaryHike" msprop:FriendlyName="PercentSalaryHike" type="xs:int" />
+                      <xs:element name="PerformanceRating" msprop:design-time-name="501165f3-520a-4802-a0de-2bdc52ee5e33" msprop:DbColumnName="PerformanceRating" msprop:FriendlyName="PerformanceRating" type="xs:int" />
+                      <xs:element name="RelationshipSatisfaction" msprop:design-time-name="88090aa0-0207-4ba6-855c-18001a609d47" msprop:DbColumnName="RelationshipSatisfaction" msprop:FriendlyName="RelationshipSatisfaction" type="xs:int" />
+                      <xs:element name="StandardHours" msprop:design-time-name="267b48ed-f651-4cf8-8c83-44dacccde06d" msprop:DbColumnName="StandardHours" msprop:FriendlyName="StandardHours" type="xs:int" />
+                      <xs:element name="StockOptionLevel" msprop:design-time-name="209ca8cf-ca52-49bc-8de0-2d1594cce750" msprop:DbColumnName="StockOptionLevel" msprop:FriendlyName="StockOptionLevel" type="xs:int" />
+                      <xs:element name="TotalWorkingYears" msprop:design-time-name="a6bb48f0-86b9-4760-a4fb-fb8b5e61ee7a" msprop:DbColumnName="TotalWorkingYears" msprop:FriendlyName="TotalWorkingYears" type="xs:int" />
+                      <xs:element name="TrainingTimesLastYear" msprop:design-time-name="927f92cf-4d7f-48f5-ba57-fc1b32f26537" msprop:DbColumnName="TrainingTimesLastYear" msprop:FriendlyName="TrainingTimesLastYear" type="xs:int" />
+                      <xs:element name="WorkLifeBalance" msprop:design-time-name="3f677b4a-c2b6-4074-9813-31f7e02301aa" msprop:DbColumnName="WorkLifeBalance" msprop:FriendlyName="WorkLifeBalance" type="xs:int" />
+                      <xs:element name="YearsAtCompany" msprop:design-time-name="7d0e0d2f-793e-4968-bf0d-a3fab66f8cb5" msprop:DbColumnName="YearsAtCompany" msprop:FriendlyName="YearsAtCompany" type="xs:int" />
+                      <xs:element name="YearsInCurrentRole" msprop:design-time-name="eab0061b-e914-4ced-8765-c8324b879db1" msprop:DbColumnName="YearsInCurrentRole" msprop:FriendlyName="YearsInCurrentRole" type="xs:int" />
+                      <xs:element name="YearsSinceLastPromotion" msprop:design-time-name="8a6c3550-b42c-4123-ab75-33644b9af687" msprop:DbColumnName="YearsSinceLastPromotion" msprop:FriendlyName="YearsSinceLastPromotion" type="xs:int" />
+                      <xs:element name="YearsWithCurrManager" msprop:design-time-name="b701f4ea-96a9-4bcb-8462-dfb755efe9d7" msprop:DbColumnName="YearsWithCurrManager" msprop:FriendlyName="YearsWithCurrManager" type="xs:int" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:complexType>
+            <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+              <xs:selector xpath=".//dbo_EmployeeAnanlysis" />
+              <xs:field xpath="Id" />
+            </xs:unique>
+          </xs:element>
+        </xs:schema>
+        <IBM_x0020_Employee xmlns="" />
+      </Schema>
+    </DataSourceView>
+  </DataSourceViews>
+</Database>
