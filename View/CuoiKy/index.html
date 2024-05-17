@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nghỉ việc đi!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div>
+            <p id="tognoek">
+                Bạn muốn biết bạn nên nghỉ việc hay không ư?
+            </p>
+        </div>
+        <img src="Images/nghiviec.gif">
+    </header>
+    <main>
+        <form>
+            <div class = "form-ne">
+                <div class="group">
+                    <input type="number" name="age" id="age"min="10" max="100" class="input-info">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label class="togn" for="age">Nhập tuổi đi</label>
+                </div>
+                <div  class="group">
+                    <input type="number" name="daily-rate" id="daily-rate" min="0" class="input-info">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label class="togn" for="daily-rate">Mức lương hàng ngày của nhỏ</label>
+                </div>
+                <div  class="group">
+                    <input type="number" name="DistanceFromHome" id="DistanceFromHome" min="0" class="input-info">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label class="togn" for="DistanceFromHome">Khoảng cách từ nhà tới trường</label>
+                </div>
+                <div  class="group">
+                    <input type="number" name="HourlyRate" id="HourlyRate" min="0" class="input-info">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label class="togn" for="HourlyRate">Mức lương theo giờ của ní</label>
+                </div>
+                <div  class="group">
+                    <input type="number" name="YearsAtCompany" id="YearsAtCompany" min="0" class="input-info">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label class="togn" for="YearsAtCompany">Số năm đi làm ở công ty hiện tại</label>
+                </div>
+                <div  class="group">
+                    <input type="number" name="YearsInCurrentRole" id="YearsInCurrentRole" min="0" class="input-info">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label class="togn" for="YearsInCurrentRole">Số năm đi làm ở vai trò hiện tại</label>
+                </div>
+                <div  class="group">
+                    <input type="number" name="YearsSinceLastPromotion" id="YearsSinceLastPromotion" min="0" class="input-info">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label class="togn" for="YearsSinceLastPromotion">Số năm đi làm kể từ lần thăng chức cuối</label>
+                </div>
+                <div  class="group">
+                    <input type="number" name="YearsWithCurrManager" id="YearsWithCurrManager" min="0" class="input-info">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label class="togn" for="YearsWithCurrManager">Số năm đi làm với quản lý hiện tại</label>
+                </div>
+                <div  class="group">
+                    <input type="number" name="MonthlyIncome" id="MonthlyIncome" min="0" class="input-info">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label class="togn" for="MonthlyIncome">Thu nhập hàng tháng</label>
+                </div>
+                <div  class="group">
+                    <input type="number" name="MonthlyRate" id="MonthlyRate" min="0" class="input-info">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label class="togn" for="MonthlyRate">Mức lương hàng tháng</label>
+                </div>
+                <div  class="group">
+                    <input type="number" name="NumCompaniesWorked" id="NumCompaniesWorked" min="0" class="input-info">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label class="togn" for="NumCompaniesWorked">Số lượng công ty từng làm</label>
+                </div>
+                <div  class="group">
+                    <input type="number" name="TotalWorkingYears" id="TotalWorkingYears" min="0" class="input-info">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label class="togn" for="TotalWorkingYears">Số năm đi làm</label>
+                </div>
+                <div  class="group">
+                    <input type="number" name="TrainingTimesLastYear" id="TrainingTimesLastYear" min="0" class="input-info">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label class="togn" for="TrainingTimesLastYear">Số lần đi đào tạo trong năm</label>
+                </div>
+                <div  class="group">
+                    <input type="number" name="PercentSalaryHike" id="PercentSalaryHike" min="0" class="input-info">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label class="togn" for="PercentSalaryHike">Tỷ lệ tăng lương</label>
+                </div>
+                <div>
+                    <p class="label-select">Tần suất đi công tác</p>
+                    <select>
+                        <option value="Travel_Rarely">Ít đi lắm</option>
+                        <option value="Travel_Frequently">Thường xuyên đi</option>
+                        <option value="Non-Trave">Không bao giờ đi cả</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="label-select">Nhỏ thuộc loại nhân viên nào</p>
+                    <select>
+                        <option value="Sales">Bán hàng</option>
+                        <option value="Research &   Development">Nghiên cứu & Phát triển</option>
+                        <option value="Human Resources">Nhân sự</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="label-select">Trình độ học vấn</p>
+                    <select id="Education">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="label-select">Ngành học há ra</p>
+                    <select id="EducationField">
+                        <option value="Life Sciences">Khoa học đời sống</option>
+                        <option value="Medical">Y khoa</option>
+                        <option value="Marketing">Tiếp thị</option>
+                        <option value="Technical Degree">Bằng kỹ thuật</option>
+                        <option value="Other">Khác</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="label-select">Mức độ hài lòng với mơi trường</p>
+                    <select id="EnvironmentSatisfaction">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="label-select">Mức độ tham gia công việc</p>
+                    <select id="JobInvolvement">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="label-select">Cấp bậc công việc</p>
+                    <select id="JobLevel">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="label-select">Vai trò công việc của nhân viên</p>
+                    <select id="JobRole">
+                        <option value="Sales Executive">Nhân viên kinh doanh</option>
+                        <option value="Research Scientist">Nhà khoa học nghiên cứu</option>
+                        <option value="Laboratory Technician">Kỹ thuật viên phòng thí nghiệm</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="label-select">Mức độ hài lòng với công việc</p>
+                    <select id="JobSatisfaction">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="label-select">Tình trạng hôn nhân</p>
+                    <select id="MaritalStatus">
+                        <option value="Single">Độc thân</option>
+                        <option value="Married">Đã kết hôn</option>
+                        <option value="Divorced">Ly hôn</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="label-select">Hiệu suất của nhân viên</p>
+                    <select id="PerformanceRating">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="label-select">Mối quan hệ tại nơi làm việc</p>
+                    <select id="RelationshipSatisfaction">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="label-select">Cấp độ quyền chọn cổ phiếu</p>
+                    <select id="StockOptionLevel">
+                        <option value="0">1</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="label-select">Cân bằng công việc và cuộc sống</p>
+                    <select id="WorkLifeBalance">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Làm ngoài giờ</legend>
+                        <div class="checkbox">
+                            <input checked type="radio" id="OverTimeYes" name="overtime" value="OverTimeYes" class="input-radio">
+                            <label for="OverTimeYes" class="lable-checkbox">Có</label>
+                        </div>
+                    
+                        <div class="checkbox">
+                            <input type="radio" id="OverTimeNo" name="overtime" value="OverTimeNo" class="input-radio">
+                            <label for="OverTimeNo" class="lable-checkbox">Không</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Giới tính</legend>
+                    
+                        <div class="checkbox">
+                            <input type="radio" id="female" name="gender" value="female" class="input-radio">
+                            <label for="female" class="lable-checkbox">Nam</label>
+                        </div>
+                    
+                        <div class="checkbox">
+                            <input type="radio" id="male" name="gender" value="male" class="input-radio">
+                            <label for="male" class="lable-checkbox">Nữ</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div  class="group last">
+                    <input type="text" name="YourName" id="YourName" required="required"  class="input-info tognoek">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label for="YourName" class="tog">Nhập tên của bạn</label>
+                </div>
+                <div  class="group last">
+                    <input type="email" name="YourEmail" id="YourEmail" required="required"  class="input-info tognoek">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label for="YourEmail" class="tog">Nhập Email đi nào</label>
+                </div>
+            </div>
+            <div class="btn-ne-be">
+                <button type="submit" class="button-54 btn_tognoek" role="button">Kiểm tra</button>
+                <img class="send-mail" src="Images/send-mail.gif">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <img src="Images/send.gif" alt="">
+        <div>
+            <p>
+                Góp ý cho chúng tôi nếu bạn cảm giác bị ngứa họng nha.
+            </p>
+            <form action="POST" method="">
+                <div class="group">
+                    <input type="text" name="name" id="name" required="required" class="input-info tognoek">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label for="name" class="tog">Tên của nhỏ</label>
+                </div>
+                <div class="group">
+                    <input type="email" name="email" id="email" required="required" class="input-info tognoek">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label for="email" class="tog">Nhét email để nhập lời ngấp</label>
+                </div>
+                <div class="group">
+                    <textarea type="textarea" rows="5" required="required"></textarea>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label for="message" class="tog">Những lời ngứa họng của nhỏ viết đây</label>
+                </div>
+                <button type="submit" class="button-30 btn_tg" role="button">Gửi đi con đĩ này!</button>
+            </form>
+        </div>
+    </footer>
+    <script src="scrip.js"></script>
+</body>
+</html>
