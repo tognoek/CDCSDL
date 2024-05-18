@@ -15,7 +15,7 @@ namespace EMAIL
             string fromEmail = "zgye28102003@gmail.com";
             string password = "lityystgpllhguuk";
             MailMessage mail = new MailMessage();
-            mail.To.Add("togneok@gmail.com");
+            mail.To.Add("hoanggvannthongg@gmail.com");
             mail.From = new MailAddress(fromEmail);
             mail.Subject = "Xin chao";
             mail.Body = "tognoek";

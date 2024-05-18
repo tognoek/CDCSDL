@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="IBM_EmployeeModelStoreContainer" CdmEntityContainer="IBM_EmployeeEntities">
+    <EntitySetMapping Name="Department">
+      <EntityTypeMapping TypeName="IBM_EmployeeModel.Department">
+        <MappingFragment StoreEntitySet="Department">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EducationField">
+      <EntityTypeMapping TypeName="IBM_EmployeeModel.EducationField">
+        <MappingFragment StoreEntitySet="EducationField">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmployeeAnanlysis">
+      <EntityTypeMapping TypeName="IBM_EmployeeModel.EmployeeAnanlysis">
+        <MappingFragment StoreEntitySet="EmployeeAnanlysis">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Attrition" ColumnName="Attrition" />
+          <ScalarProperty Name="BusinessTravel" ColumnName="BusinessTravel" />
+          <ScalarProperty Name="DailyRate" ColumnName="DailyRate" />
+          <ScalarProperty Name="DistanceFromHome" ColumnName="DistanceFromHome" />
+          <ScalarProperty Name="Education" ColumnName="Education" />
+          <ScalarProperty Name="EmployeeCount" ColumnName="EmployeeCount" />
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+          <ScalarProperty Name="EnvironmentSatisfaction" ColumnName="EnvironmentSatisfaction" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="HourlyRate" ColumnName="HourlyRate" />
+          <ScalarProperty Name="JobInvolvement" ColumnName="JobInvolvement" />
+          <ScalarProperty Name="JobLevel" ColumnName="JobLevel" />
+          <ScalarProperty Name="JobSatisfaction" ColumnName="JobSatisfaction" />
+          <ScalarProperty Name="MaritalStatus" ColumnName="MaritalStatus" />
+          <ScalarProperty Name="MonthlyIncome" ColumnName="MonthlyIncome" />
+          <ScalarProperty Name="MonthlyRate" ColumnName="MonthlyRate" />
+          <ScalarProperty Name="NumCompaniesWorked" ColumnName="NumCompaniesWorked" />
+          <ScalarProperty Name="Over18" ColumnName="Over18" />
+          <ScalarProperty Name="OverTime" ColumnName="OverTime" />
+          <ScalarProperty Name="PercentSalaryHike" ColumnName="PercentSalaryHike" />
+          <ScalarProperty Name="PerformanceRating" ColumnName="PerformanceRating" />
+          <ScalarProperty Name="RelationshipSatisfaction" ColumnName="RelationshipSatisfaction" />
+          <ScalarProperty Name="StandardHours" ColumnName="StandardHours" />
+          <ScalarProperty Name="StockOptionLevel" ColumnName="StockOptionLevel" />
+          <ScalarProperty Name="TotalWorkingYears" ColumnName="TotalWorkingYears" />
+          <ScalarProperty Name="TrainingTimesLastYear" ColumnName="TrainingTimesLastYear" />
+          <ScalarProperty Name="WorkLifeBalance" ColumnName="WorkLifeBalance" />
+          <ScalarProperty Name="YearsAtCompany" ColumnName="YearsAtCompany" />
+          <ScalarProperty Name="YearsInCurrentRole" ColumnName="YearsInCurrentRole" />
+          <ScalarProperty Name="YearsSinceLastPromotion" ColumnName="YearsSinceLastPromotion" />
+          <ScalarProperty Name="YearsWithCurrManager" ColumnName="YearsWithCurrManager" />
+          <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+          <ScalarProperty Name="EducationFieldId" ColumnName="EducationFieldId" />
+          <ScalarProperty Name="JobRoleId" ColumnName="JobRoleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobRole">
+      <EntityTypeMapping TypeName="IBM_EmployeeModel.JobRole">
+        <MappingFragment StoreEntitySet="JobRole">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="IBM_EmployeeModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="IBM_EmployeeModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="IBM_EmployeeModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="IBM_EmployeeModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="IBM_EmployeeModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IBM_EmployeeModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="IBM_EmployeeModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IBM_EmployeeModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="IBM_EmployeeModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="IBM_EmployeeModel.Store.sp_upgraddiagrams" />
+  </EntityContainerMapping>
+</Mapping>

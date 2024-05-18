@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="IBM_EmployeeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Department">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EducationField">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EmployeeAnanlysis">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Age" Type="int" Nullable="false" />
+          <Property Name="Attrition" Type="bit" Nullable="false" />
+          <Property Name="BusinessTravel" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="DailyRate" Type="int" Nullable="false" />
+          <Property Name="DistanceFromHome" Type="int" Nullable="false" />
+          <Property Name="Education" Type="int" Nullable="false" />
+          <Property Name="EmployeeCount" Type="int" Nullable="false" />
+          <Property Name="EmployeeNumber" Type="int" Nullable="false" />
+          <Property Name="EnvironmentSatisfaction" Type="int" Nullable="false" />
+          <Property Name="Gender" Type="bit" Nullable="false" />
+          <Property Name="HourlyRate" Type="int" Nullable="false" />
+          <Property Name="JobInvolvement" Type="int" Nullable="false" />
+          <Property Name="JobLevel" Type="int" Nullable="false" />
+          <Property Name="JobSatisfaction" Type="int" Nullable="false" />
+          <Property Name="MaritalStatus" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="MonthlyIncome" Type="int" Nullable="false" />
+          <Property Name="MonthlyRate" Type="int" Nullable="false" />
+          <Property Name="NumCompaniesWorked" Type="int" Nullable="false" />
+          <Property Name="Over18" Type="bit" Nullable="false" />
+          <Property Name="OverTime" Type="bit" Nullable="false" />
+          <Property Name="PercentSalaryHike" Type="int" Nullable="false" />
+          <Property Name="PerformanceRating" Type="int" Nullable="false" />
+          <Property Name="RelationshipSatisfaction" Type="int" Nullable="false" />
+          <Property Name="StandardHours" Type="int" Nullable="false" />
+          <Property Name="StockOptionLevel" Type="int" Nullable="false" />
+          <Property Name="TotalWorkingYears" Type="int" Nullable="false" />
+          <Property Name="TrainingTimesLastYear" Type="int" Nullable="false" />
+          <Property Name="WorkLifeBalance" Type="int" Nullable="false" />
+          <Property Name="YearsAtCompany" Type="int" Nullable="false" />
+          <Property Name="YearsInCurrentRole" Type="int" Nullable="false" />
+          <Property Name="YearsSinceLastPromotion" Type="int" Nullable="false" />
+          <Property Name="YearsWithCurrManager" Type="int" Nullable="false" />
+          <Property Name="DepartmentId" Type="int" Nullable="false" />
+          <Property Name="EducationFieldId" Type="int" Nullable="false" />
+          <Property Name="JobRoleId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="JobRole">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <Association Name="FK__EmployeeA__Educa__2C3393D0">
+          <End Role="EducationField" Type="Self.EducationField" Multiplicity="1" />
+          <End Role="EmployeeAnanlysis" Type="Self.EmployeeAnanlysis" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EducationField">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeAnanlysis">
+              <PropertyRef Name="EducationFieldId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EmployeeA__JobRo__2B3F6F97">
+          <End Role="Department" Type="Self.Department" Multiplicity="1" />
+          <End Role="EmployeeAnanlysis" Type="Self.EmployeeAnanlysis" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Department">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeAnanlysis">
+              <PropertyRef Name="DepartmentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EmployeeA__JobRo__2D27B809">
+          <End Role="JobRole" Type="Self.JobRole" Multiplicity="1" />
+          <End Role="EmployeeAnanlysis" Type="Self.EmployeeAnanlysis" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JobRole">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeAnanlysis">
+              <PropertyRef Name="JobRoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+        <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="version" Type="int" Mode="In" />
+          <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+        </Function>
+        <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="version" Type="int" Mode="In" />
+          <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+        </Function>
+        <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <EntityContainer Name="IBM_EmployeeModelStoreContainer">
+          <EntitySet Name="Department" EntityType="Self.Department" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EducationField" EntityType="Self.EducationField" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EmployeeAnanlysis" EntityType="Self.EmployeeAnanlysis" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="JobRole" EntityType="Self.JobRole" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__EmployeeA__Educa__2C3393D0" Association="Self.FK__EmployeeA__Educa__2C3393D0">
+            <End Role="EducationField" EntitySet="EducationField" />
+            <End Role="EmployeeAnanlysis" EntitySet="EmployeeAnanlysis" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EmployeeA__JobRo__2B3F6F97" Association="Self.FK__EmployeeA__JobRo__2B3F6F97">
+            <End Role="Department" EntitySet="Department" />
+            <End Role="EmployeeAnanlysis" EntitySet="EmployeeAnanlysis" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EmployeeA__JobRo__2D27B809" Association="Self.FK__EmployeeA__JobRo__2D27B809">
+            <End Role="JobRole" EntitySet="JobRole" />
+            <End Role="EmployeeAnanlysis" EntitySet="EmployeeAnanlysis" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="IBM_EmployeeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Department">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="EmployeeAnanlysis" Relationship="Self.FK__EmployeeA__JobRo__2B3F6F97" FromRole="Department" ToRole="EmployeeAnanlysis" />
+        </EntityType>
+        <EntityType Name="EducationField">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="EmployeeAnanlysis" Relationship="Self.FK__EmployeeA__Educa__2C3393D0" FromRole="EducationField" ToRole="EmployeeAnanlysis" />
+        </EntityType>
+        <EntityType Name="EmployeeAnanlysis">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Age" Type="Int32" Nullable="false" />
+          <Property Name="Attrition" Type="Boolean" Nullable="false" />
+          <Property Name="BusinessTravel" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DailyRate" Type="Int32" Nullable="false" />
+          <Property Name="DistanceFromHome" Type="Int32" Nullable="false" />
+          <Property Name="Education" Type="Int32" Nullable="false" />
+          <Property Name="EmployeeCount" Type="Int32" Nullable="false" />
+          <Property Name="EmployeeNumber" Type="Int32" Nullable="false" />
+          <Property Name="EnvironmentSatisfaction" Type="Int32" Nullable="false" />
+          <Property Name="Gender" Type="Boolean" Nullable="false" />
+          <Property Name="HourlyRate" Type="Int32" Nullable="false" />
+          <Property Name="JobInvolvement" Type="Int32" Nullable="false" />
+          <Property Name="JobLevel" Type="Int32" Nullable="false" />
+          <Property Name="JobSatisfaction" Type="Int32" Nullable="false" />
+          <Property Name="MaritalStatus" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MonthlyIncome" Type="Int32" Nullable="false" />
+          <Property Name="MonthlyRate" Type="Int32" Nullable="false" />
+          <Property Name="NumCompaniesWorked" Type="Int32" Nullable="false" />
+          <Property Name="Over18" Type="Boolean" Nullable="false" />
+          <Property Name="OverTime" Type="Boolean" Nullable="false" />
+          <Property Name="PercentSalaryHike" Type="Int32" Nullable="false" />
+          <Property Name="PerformanceRating" Type="Int32" Nullable="false" />
+          <Property Name="RelationshipSatisfaction" Type="Int32" Nullable="false" />
+          <Property Name="StandardHours" Type="Int32" Nullable="false" />
+          <Property Name="StockOptionLevel" Type="Int32" Nullable="false" />
+          <Property Name="TotalWorkingYears" Type="Int32" Nullable="false" />
+          <Property Name="TrainingTimesLastYear" Type="Int32" Nullable="false" />
+          <Property Name="WorkLifeBalance" Type="Int32" Nullable="false" />
+          <Property Name="YearsAtCompany" Type="Int32" Nullable="false" />
+          <Property Name="YearsInCurrentRole" Type="Int32" Nullable="false" />
+          <Property Name="YearsSinceLastPromotion" Type="Int32" Nullable="false" />
+          <Property Name="YearsWithCurrManager" Type="Int32" Nullable="false" />
+          <Property Name="DepartmentId" Type="Int32" Nullable="false" />
+          <Property Name="EducationFieldId" Type="Int32" Nullable="false" />
+          <Property Name="JobRoleId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Department" Relationship="Self.FK__EmployeeA__JobRo__2B3F6F97" FromRole="EmployeeAnanlysis" ToRole="Department" />
+          <NavigationProperty Name="EducationField" Relationship="Self.FK__EmployeeA__Educa__2C3393D0" FromRole="EmployeeAnanlysis" ToRole="EducationField" />
+          <NavigationProperty Name="JobRole" Relationship="Self.FK__EmployeeA__JobRo__2D27B809" FromRole="EmployeeAnanlysis" ToRole="JobRole" />
+        </EntityType>
+        <EntityType Name="JobRole">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="EmployeeAnanlysis" Relationship="Self.FK__EmployeeA__JobRo__2D27B809" FromRole="JobRole" ToRole="EmployeeAnanlysis" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <Association Name="FK__EmployeeA__JobRo__2B3F6F97">
+          <End Role="Department" Type="Self.Department" Multiplicity="1" />
+          <End Role="EmployeeAnanlysis" Type="Self.EmployeeAnanlysis" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Department">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeAnanlysis">
+              <PropertyRef Name="DepartmentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EmployeeA__Educa__2C3393D0">
+          <End Role="EducationField" Type="Self.EducationField" Multiplicity="1" />
+          <End Role="EmployeeAnanlysis" Type="Self.EmployeeAnanlysis" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EducationField">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeAnanlysis">
+              <PropertyRef Name="EducationFieldId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EmployeeA__JobRo__2D27B809">
+          <End Role="JobRole" Type="Self.JobRole" Multiplicity="1" />
+          <End Role="EmployeeAnanlysis" Type="Self.EmployeeAnanlysis" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JobRole">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeAnanlysis">
+              <PropertyRef Name="JobRoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="IBM_EmployeeEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Department" EntityType="Self.Department" />
+          <EntitySet Name="EducationField" EntityType="Self.EducationField" />
+          <EntitySet Name="EmployeeAnanlysis" EntityType="Self.EmployeeAnanlysis" />
+          <EntitySet Name="JobRole" EntityType="Self.JobRole" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+          <AssociationSet Name="FK__EmployeeA__JobRo__2B3F6F97" Association="Self.FK__EmployeeA__JobRo__2B3F6F97">
+            <End Role="Department" EntitySet="Department" />
+            <End Role="EmployeeAnanlysis" EntitySet="EmployeeAnanlysis" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EmployeeA__Educa__2C3393D0" Association="Self.FK__EmployeeA__Educa__2C3393D0">
+            <End Role="EducationField" EntitySet="EducationField" />
+            <End Role="EmployeeAnanlysis" EntitySet="EmployeeAnanlysis" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EmployeeA__JobRo__2D27B809" Association="Self.FK__EmployeeA__JobRo__2D27B809">
+            <End Role="JobRole" EntitySet="JobRole" />
+            <End Role="EmployeeAnanlysis" EntitySet="EmployeeAnanlysis" />
+          </AssociationSet>
+          <FunctionImport Name="sp_alterdiagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="version" Mode="In" Type="Int32" />
+            <Parameter Name="definition" Mode="In" Type="Binary" />
+          </FunctionImport>
+          <FunctionImport Name="sp_creatediagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="version" Mode="In" Type="Int32" />
+            <Parameter Name="definition" Mode="In" Type="Binary" />
+          </FunctionImport>
+          <FunctionImport Name="sp_dropdiagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(IBM_EmployeeModel.sp_helpdiagramdefinition_Result)">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(IBM_EmployeeModel.sp_helpdiagrams_Result)">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_renamediagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="new_diagramname" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_upgraddiagrams" />
+        </EntityContainer>
+        <ComplexType Name="sp_helpdiagramdefinition_Result">
+          <Property Type="Int32" Name="version" Nullable="true" />
+          <Property Type="Binary" Name="definition" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="sp_helpdiagrams_Result">
+          <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+          <Property Type="Int32" Name="OwnerID" Nullable="false" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="IBM_EmployeeModelStoreContainer" CdmEntityContainer="IBM_EmployeeEntities">
+          <EntitySetMapping Name="Department">
+            <EntityTypeMapping TypeName="IBM_EmployeeModel.Department">
+              <MappingFragment StoreEntitySet="Department">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EducationField">
+            <EntityTypeMapping TypeName="IBM_EmployeeModel.EducationField">
+              <MappingFragment StoreEntitySet="EducationField">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmployeeAnanlysis">
+            <EntityTypeMapping TypeName="IBM_EmployeeModel.EmployeeAnanlysis">
+              <MappingFragment StoreEntitySet="EmployeeAnanlysis">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="Attrition" ColumnName="Attrition" />
+                <ScalarProperty Name="BusinessTravel" ColumnName="BusinessTravel" />
+                <ScalarProperty Name="DailyRate" ColumnName="DailyRate" />
+                <ScalarProperty Name="DistanceFromHome" ColumnName="DistanceFromHome" />
+                <ScalarProperty Name="Education" ColumnName="Education" />
+                <ScalarProperty Name="EmployeeCount" ColumnName="EmployeeCount" />
+                <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+                <ScalarProperty Name="EnvironmentSatisfaction" ColumnName="EnvironmentSatisfaction" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="HourlyRate" ColumnName="HourlyRate" />
+                <ScalarProperty Name="JobInvolvement" ColumnName="JobInvolvement" />
+                <ScalarProperty Name="JobLevel" ColumnName="JobLevel" />
+                <ScalarProperty Name="JobSatisfaction" ColumnName="JobSatisfaction" />
+                <ScalarProperty Name="MaritalStatus" ColumnName="MaritalStatus" />
+                <ScalarProperty Name="MonthlyIncome" ColumnName="MonthlyIncome" />
+                <ScalarProperty Name="MonthlyRate" ColumnName="MonthlyRate" />
+                <ScalarProperty Name="NumCompaniesWorked" ColumnName="NumCompaniesWorked" />
+                <ScalarProperty Name="Over18" ColumnName="Over18" />
+                <ScalarProperty Name="OverTime" ColumnName="OverTime" />
+                <ScalarProperty Name="PercentSalaryHike" ColumnName="PercentSalaryHike" />
+                <ScalarProperty Name="PerformanceRating" ColumnName="PerformanceRating" />
+                <ScalarProperty Name="RelationshipSatisfaction" ColumnName="RelationshipSatisfaction" />
+                <ScalarProperty Name="StandardHours" ColumnName="StandardHours" />
+                <ScalarProperty Name="StockOptionLevel" ColumnName="StockOptionLevel" />
+                <ScalarProperty Name="TotalWorkingYears" ColumnName="TotalWorkingYears" />
+                <ScalarProperty Name="TrainingTimesLastYear" ColumnName="TrainingTimesLastYear" />
+                <ScalarProperty Name="WorkLifeBalance" ColumnName="WorkLifeBalance" />
+                <ScalarProperty Name="YearsAtCompany" ColumnName="YearsAtCompany" />
+                <ScalarProperty Name="YearsInCurrentRole" ColumnName="YearsInCurrentRole" />
+                <ScalarProperty Name="YearsSinceLastPromotion" ColumnName="YearsSinceLastPromotion" />
+                <ScalarProperty Name="YearsWithCurrManager" ColumnName="YearsWithCurrManager" />
+                <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+                <ScalarProperty Name="EducationFieldId" ColumnName="EducationFieldId" />
+                <ScalarProperty Name="JobRoleId" ColumnName="JobRoleId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="JobRole">
+            <EntityTypeMapping TypeName="IBM_EmployeeModel.JobRole">
+              <MappingFragment StoreEntitySet="JobRole">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="IBM_EmployeeModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="IBM_EmployeeModel.Store.sp_alterdiagram" />
+          <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="IBM_EmployeeModel.Store.sp_creatediagram" />
+          <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="IBM_EmployeeModel.Store.sp_dropdiagram" />
+          <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="IBM_EmployeeModel.Store.sp_helpdiagramdefinition">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="IBM_EmployeeModel.sp_helpdiagramdefinition_Result">
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="IBM_EmployeeModel.Store.sp_helpdiagrams">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="IBM_EmployeeModel.sp_helpdiagrams_Result">
+                <ScalarProperty Name="Database" ColumnName="Database" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Owner" ColumnName="Owner" />
+                <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="IBM_EmployeeModel.Store.sp_renamediagram" />
+          <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="IBM_EmployeeModel.Store.sp_upgraddiagrams" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

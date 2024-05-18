@@ -23,6 +23,14 @@
       <Name>Employee Ananlysis.dmm</Name>
       <FullPath>Employee Ananlysis.dmm</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Employee Ananlysis Logistic Regression.dmm</Name>
+      <FullPath>Employee Ananlysis Logistic Regression.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Employee Ananlysis Neural.dmm</Name>
+      <FullPath>Employee Ananlysis Neural.dmm</FullPath>
+    </ProjectItem>
   </MiningModels>
   <Configurations>
     <Configuration>

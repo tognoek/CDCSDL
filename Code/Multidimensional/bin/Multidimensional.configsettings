@@ -14,6 +14,12 @@
       <MiningStructure>
         <ID>Employee Ananlysis</ID>
       </MiningStructure>
+      <MiningStructure>
+        <ID>Employee Ananlysis Logistic Regression</ID>
+      </MiningStructure>
+      <MiningStructure>
+        <ID>Employee Ananlysis Neural</ID>
+      </MiningStructure>
     </MiningStructures>
     <DataSourceImpersonationInfo>
       <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>

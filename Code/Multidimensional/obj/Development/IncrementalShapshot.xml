@@ -19,23 +19,37 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>vvI5FgGhe/DL/9d0ANEbCuO3kNI=17/05/2024 4:35:29 CH17/05/2024 4:35:29 CH</TimeStamp>
+        <TimeStamp>lEvoTWG473o+BkusywY8UTpbd18=18/05/2024 2:28:37 CH18/05/2024 2:28:36 CH</TimeStamp>
         <ID>
           <String>IBM Employee</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>KSm8UIprmGSfL6pCAFNEzTulnsA=17/05/2024 4:36:00 CH17/05/2024 4:35:59 CH</TimeStamp>
+        <TimeStamp>Q1R/wZBZsAMWjY7s+Lu/IG1uhk8=18/05/2024 2:29:07 CH18/05/2024 2:29:07 CH</TimeStamp>
         <ID>
           <String>IBM Employee</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.MiningStructure</Type>
-        <TimeStamp>MH63URgH9IYClTXm0iOH8NA+bYo=17/05/2024 4:44:12 CH17/05/2024 4:43:39 CH</TimeStamp>
+        <TimeStamp>e7sLRjmbmOyN2djH+8YYyCYRUOQ=18/05/2024 2:38:14 CH18/05/2024 2:33:27 CH</TimeStamp>
         <ID>
           <String>Employee Ananlysis</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>KJHjndXr9lgQNEbekWqkmv5YZ8Y=18/05/2024 8:51:33 CH18/05/2024 8:51:33 CH</TimeStamp>
+        <ID>
+          <String>Employee Ananlysis Logistic Regression</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>EdlyIlbiHysZYPFHNdXpx1uhpM8=18/05/2024 8:54:15 CH18/05/2024 8:54:15 CH</TimeStamp>
+        <ID>
+          <String>Employee Ananlysis Neural</String>
         </ID>
       </ObjectSnapshot>
     </ObjectSnapshots>
@@ -50,5 +64,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2024-05-17T09:45:50Z</LastDeployed>
+  <LastDeployed>2024-05-18T13:54:23.396667Z</LastDeployed>
 </DeploymentSnapshot>
