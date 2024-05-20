@@ -1,0 +1,9 @@
+SELECT
+  Cluster(),
+  ClusterProbability()
+From
+  [Employee Ananlysis Cluster]
+NATURAL PREDICTION JOIN
+(SELECT 32 AS [Age],
+  2 AS [Daily Rate],
+  1 AS [Education Field Id]) AS t

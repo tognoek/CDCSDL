@@ -31,6 +31,10 @@
       <Name>Employee Ananlysis Neural.dmm</Name>
       <FullPath>Employee Ananlysis Neural.dmm</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Employee Ananlysis Cluster.dmm</Name>
+      <FullPath>Employee Ananlysis Cluster.dmm</FullPath>
+    </ProjectItem>
   </MiningModels>
   <Configurations>
     <Configuration>

@@ -1,17 +1,92 @@
-﻿@model WebApplication.Models.Send
+﻿@model WebApplication.Models.ResSend
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nghỉ việc đi!</title>
+    <title>Bạn đừng nghỉ việc!</title>
+    <link rel="stylesheet" href="~/Content/css/send.css">
+    <link rel="shortcut icon" href="~/Images/logo.png" type="image/x-icon">
 </head>
+
 <body>
-    <p>@Model.ketqua</p>
-    <br />
-    <p>@Model.tognoek</p>
-    <br />
-    <p>@Model.Email</p>
+    <header>
+        <div>
+            <p id="tognoek">
+                Dưới đây là kết quả của bạn.
+            </p>
+        </div>
+        <img src="Images/dongluc.gif">
+    </header>
+    <main>
+        <div class="ketqua">
+            <img src="Images/cute.gif" alt="">
+            <div class="container">
+                <ul class="responsive-table">
+                    <li class="table-header">
+                        <div class="col col-2">Phương thức</div>
+                        <div class="col col-2">Dự đoán</div>
+                        <div class="col col-1">Tỷ lệ</div>
+                    </li>
+                    @foreach (var item in Model.Sends)
+                    {
+                        <li class="table-row">
+                            <div class="col col-2" data-label="Job Id">@item.phuongthuc</div>
+                            <div class="col col-2" data-label="Customer Name">@item.ketqua</div>
+                            <div class="col col-1" data-label="Amount">@item.tognoek</div>
+                        </li>
+                    }
+                </ul>
+            </div>
+            <img src="Images/cute.gif" alt="">
+        </div>
+        <div class="loikhuyen">
+            <strong>Đọc cho vui lấy tý thông tin nha bạn</strong>
+
+            <ol class="alternating-colors">
+                @foreach (var item in Model.LoiKhuyens)
+                {
+                    <li class="li-ne">
+                        <strong>@item.Name</strong>
+                        <p>@item.Detail</p>
+                    </li>
+                }
+            </ol>
+        </div>
+    </main>
+    <footer>
+        <img src="~/Images/send.gif" alt="">
+        <div>
+            <p>
+                Góp ý cho chúng tôi nếu bạn có nhưng góp ý hay cho tôi.
+            </p>
+            <form action="/@ENV.ROUTE.SEND_EMAIL" method="POST">
+                <div class="group">
+                    <input type="text" name="name" id="name" required="required" class="input-info tognoek">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label for="name" class="tog">Cho tôi biết tên bạn</label>
+                </div>
+                <div class="group">
+                    <input type="email" name="email" id="email" required="required" class="input-info tognoek">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label for="email" class="tog">Email của bạn là gì</label>
+                </div>
+                <div class="group">
+                    <textarea type="textarea" rows="5" required="required"></textarea>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label for="message" class="tog">Những lời bạn muốn nói</label>
+                </div>
+                <button type="submit" class="button-30 btn_tg" role="button">Gửi đi này!</button>
+            </form>
+        </div>
+    </footer>
+    <script src="~/Scripts/js/send.js"></script>
 </body>
+
 </html>

@@ -20,6 +20,9 @@
       <MiningStructure>
         <ID>Employee Ananlysis Neural</ID>
       </MiningStructure>
+      <MiningStructure>
+        <ID>Employee Ananlysis Cluster</ID>
+      </MiningStructure>
     </MiningStructures>
     <DataSourceImpersonationInfo>
       <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>

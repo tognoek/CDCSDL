@@ -11,6 +11,7 @@ namespace WebApplication
         {
             public const string PAGE_INDEX = "";
             public const string PAGE_SEND = "tognoek";
+            public const string SEND_EMAIL = "tog";
         }
     }
 }

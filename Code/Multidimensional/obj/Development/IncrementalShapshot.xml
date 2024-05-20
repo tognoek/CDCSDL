@@ -40,16 +40,23 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.MiningStructure</Type>
-        <TimeStamp>KJHjndXr9lgQNEbekWqkmv5YZ8Y=18/05/2024 8:51:33 CH18/05/2024 8:51:33 CH</TimeStamp>
+        <TimeStamp>s4S8LcTQ89Yxdz8nmdBMZXWqQcI=20/05/2024 12:54:10 SA18/05/2024 8:51:33 CH</TimeStamp>
         <ID>
           <String>Employee Ananlysis Logistic Regression</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.MiningStructure</Type>
-        <TimeStamp>EdlyIlbiHysZYPFHNdXpx1uhpM8=18/05/2024 8:54:15 CH18/05/2024 8:54:15 CH</TimeStamp>
+        <TimeStamp>qOPgLFuc6csoYMKqzaXu0WsnXl8=20/05/2024 12:53:06 SA18/05/2024 8:54:15 CH</TimeStamp>
         <ID>
           <String>Employee Ananlysis Neural</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>w/CT5IV6iU34OtRWKsNALdeoP7s=20/05/2024 1:40:44 SA20/05/2024 12:48:52 SA</TimeStamp>
+        <ID>
+          <String>Employee Ananlysis Cluster</String>
         </ID>
       </ObjectSnapshot>
     </ObjectSnapshots>
@@ -64,5 +71,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2024-05-18T13:54:23.396667Z</LastDeployed>
+  <LastDeployed>2024-05-19T19:14:07.06Z</LastDeployed>
 </DeploymentSnapshot>

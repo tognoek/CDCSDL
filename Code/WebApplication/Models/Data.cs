@@ -39,6 +39,11 @@ namespace WebApplication.Models
         public int? YearsWithCurrManager { get; set; }
         public string YourName { get; set; }
         public string YourEmail { get; set; }
+
+        public string BusinessTravelCustom()
+        {
+            return BusinessTravel.Replace('_', ' ').Replace('-', ' ');
+        }
     }
 
 }

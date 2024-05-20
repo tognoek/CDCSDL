@@ -1,0 +1,325 @@
+* {
+    font-family: "JetBrains Mono", monospace;
+}
+
+header img {
+    border-radius: 5%;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.5);
+}
+
+header {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+#tognoek {
+    font-size: 60px;
+}
+
+.container {
+    flex: 1;
+    min-width: max-content;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    font-size: 26px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+    h2 small {
+        font-size: 0.5em;
+    }
+
+.responsive-table {
+    padding-inline-start: 0;
+}
+
+    .responsive-table li {
+        border-radius: 3px;
+        padding: 25px 30px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+    }
+
+    .responsive-table .table-header {
+        background-color: #95a5a6;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+    }
+
+    .responsive-table .table-row {
+        background-color: #ffffff;
+        box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    .responsive-table .col-1 {
+        flex-basis: 10%;
+    }
+
+    .responsive-table .col-2 {
+        flex-basis: 40%;
+    }
+
+    .responsive-table .col-3 {
+        flex-basis: 25%;
+    }
+
+    .responsive-table .col-4 {
+        flex-basis: 25%;
+    }
+
+@media all and (max-width: 767px) {
+    .responsive-table .table-header {
+        display: none;
+    }
+
+    .responsive-table li {
+        display: block;
+    }
+
+    .responsive-table .col {
+        flex-basis: 100%;
+    }
+
+    .responsive-table .col {
+        display: flex;
+        padding: 10px 0;
+    }
+
+        .responsive-table .col:before {
+            color: #6c7a89;
+            padding-right: 10px;
+            content: attr(data-label);
+            flex-basis: 50%;
+            text-align: right;
+        }
+}
+
+.ketqua {
+    margin-top: 50px;
+    display: flex;
+}
+
+.loikhuyen {
+    display: flex;
+    flex-direction: column;
+    max-width: 940px;
+    padding: 32px;
+    margin: 60px auto;
+    border: 1px solid #eee;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06);
+}
+
+ol {
+    padding-left: 50px;
+}
+
+.li-ne {
+    color: #4f4f4f;
+    padding-left: 16px;
+    margin-top: 24px;
+    position: relative;
+    font-size: 16px;
+    line-height: 20px;
+    &:before
+
+{
+    content: "";
+    display: block;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    position: absolute;
+    top: -12px;
+    left: -46px;
+}
+
+}
+
+strong {
+    color: #292929;
+}
+
+ol.alternating-colors {
+    li: nth-child(odd):before
+
+{
+    border-color: #0bad02;
+}
+
+li:nth-child(even):before {
+    border-color: #2378d5;
+}
+
+}
+
+.button-30 {
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+}
+
+    .button-30:focus {
+        box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    }
+
+    .button-30:hover {
+        box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+        transform: translateY(-2px);
+    }
+
+    .button-30:active {
+        box-shadow: #D6D6E7 0 3px 7px inset;
+        transform: translateY(2px);
+    }
+
+.spacer {
+    display: none;
+}
+
+.group {
+    position: relative;
+    margin: 51.5px 0 0 0;
+}
+
+textarea {
+    resize: none;
+}
+
+.input-info,
+textarea {
+    width: 23rem;
+    background: none;
+    color: #0c0c0c;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    padding: 10px 10px 10px 20px;
+    display: block;
+    height: 30px;
+    border: none;
+    border-radius: 0.25rem;
+    ;
+    border-bottom: 1px solid #c6c6c6;
+}
+
+    .input-info:focus,
+    textarea:focus {
+        outline: none;
+    }
+
+        .tognoek:focus ~ label,
+        .tognoek:valid ~ label,
+        textarea:focus ~ label,
+        textarea:valid ~ label {
+            top: -25px;
+            font-size: 15px;
+            color: black;
+        }
+
+        .input-info:focus ~ .bar:before textarea:focus ~ .bar:before {
+            width: 20.9rem;
+        }
+
+    .input-info[type=password] {
+        letter-spacing: 0.3em;
+    }
+
+textarea {
+    resize: none;
+    overflow: auto;
+    height: 100px;
+    width: 30rem;
+}
+
+.label-select {
+    margin-left: 1rem;
+}
+
+.tog {
+    color: #646464;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 1rem;
+    top: 14px;
+    transition: 300ms ease all;
+}
+
+.togn {
+    color: #000000;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 1rem;
+    top: -25px;
+    transition: 300ms ease all;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 23rem;
+}
+
+    .bar:before {
+        content: "";
+        height: 2px;
+        width: 0;
+        bottom: 0px;
+        position: absolute;
+        background: black;
+        transition: 300ms ease all;
+        left: 0;
+    }
+
+footer {
+    display: flex;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    justify-content: space-evenly;
+}
+
+.send-mail {
+    width: 100px;
+}
+
+.btn_tg {
+    margin-top: 30px;
+}

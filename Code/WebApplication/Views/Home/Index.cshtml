@@ -25,25 +25,25 @@
                     <input type="number" name="age" id="age" min="10" max="100" class="input-info">
                     <span class="highlight"></span>
                     <span class="bar"></span>
-                    <label class="togn" for="age">Nhập tuổi đi</label>
+                    <label class="togn" for="age">Nhập tuổi của bạn</label>
                 </div>
                 <div class="group">
-                    <input type="number" name="daily-rate" id="daily-rate" min="0" class="input-info">
+                    <input type="number" name="DailyRate" id="DailyRate" min="0" class="input-info">
                     <span class="highlight"></span>
                     <span class="bar"></span>
-                    <label class="togn" for="daily-rate">Mức lương hàng ngày của nhỏ</label>
+                    <label class="togn" for="DailyRate">Mức lương hàng ngày của nhỏ</label>
                 </div>
                 <div class="group">
                     <input type="number" name="DistanceFromHome" id="DistanceFromHome" min="0" class="input-info">
                     <span class="highlight"></span>
                     <span class="bar"></span>
-                    <label class="togn" for="DistanceFromHome">Khoảng cách từ nhà tới trường</label>
+                    <label class="togn" for="DistanceFromHome">Khoảng cách từ nhà tới nơi làm việc</label>
                 </div>
                 <div class="group">
                     <input type="number" name="HourlyRate" id="HourlyRate" min="0" class="input-info">
                     <span class="highlight"></span>
                     <span class="bar"></span>
-                    <label class="togn" for="HourlyRate">Mức lương theo giờ của ní</label>
+                    <label class="togn" for="HourlyRate">Mức lương theo giờ</label>
                 </div>
                 <div class="group">
                     <input type="number" name="YearsAtCompany" id="YearsAtCompany" min="0" class="input-info">
@@ -107,16 +107,16 @@
                 </div>
                 <div>
                     <p class="label-select">Tần suất đi công tác</p>
-                    <select id="BusinessTravel">
+                    <select id="BusinessTravel" name="BusinessTravel">
                         <option value="0">Không trả lời</option>
-                        <option value="Travel_Rarely">Ít đi lắm</option>
-                        <option value="Travel_Frequently">Thường xuyên đi</option>
-                        <option value="Non-Trave">Không bao giờ đi cả</option>
+                        <option value="Travel_Rarely">1 - Ít đi lắm</option>
+                        <option value="Travel_Frequently">2 - Thường xuyên đi</option>
+                        <option value="Non-Trave">3 - Không bao giờ đi cả</option>
                     </select>
                 </div>
                 <div>
                     <p class="label-select">Nhỏ thuộc loại nhân viên nào</p>
-                    <select id="Department">
+                    <select id="Department" name="Department">
                         <option value="0">Không trả lời</option>
                         @foreach (var item in Model.Departments)
                         {
@@ -131,18 +131,18 @@
                 </div>
                 <div>
                     <p class="label-select">Trình độ học vấn</p>
-                    <select id="Education">
+                    <select id="Education" name="Education">
                         <option value="0">Không trả lời</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
+                        <option value="1">1 - Trung học</option>
+                        <option value="2">2 - Cao đẳng</option>
+                        <option value="3">3 - Đại học</option>
+                        <option value="4">4 - Thạc sĩ</option>
+                        <option value="5">5 - Tiến sĩ</option>
                     </select>
                 </div>
                 <div>
-                    <p class="label-select">Ngành học há ra</p>
-                    <select id="EducationField">
+                    <p class="label-select">Ngành học là gì</p>
+                    <select id="EducationField" name="EducationField">
                         <option value="0">Không trả lời</option>
                         @foreach (var item in Model.EducationFields)
                         {
@@ -159,37 +159,37 @@
                 </div>
                 <div>
                     <p class="label-select">Mức độ hài lòng với mơi trường</p>
-                    <select id="EnvironmentSatisfaction">
+                    <select id="EnvironmentSatisfaction" name="EnvironmentSatisfaction">
                         <option value="0">Không trả lời</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
+                        <option value="1">1 - Rất không hài lòng</option>
+                        <option value="2">2 - Không hài lòng</option>
+                        <option value="3">3 - Hài lòng</option>
+                        <option value="4">4 - Rất hài lòng</option>
                     </select>
                 </div>
                 <div>
                     <p class="label-select">Mức độ tham gia công việc</p>
-                    <select id="JobInvolvement">
+                    <select id="JobInvolvement" name="JobInvolvement">
                         <option value="0">Không trả lời</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
+                        <option value="1">1 - Rất thấp</option>
+                        <option value="2">2 - Thấp</option>
+                        <option value="3">3 - Trung bình</option>
+                        <option value="4">4 - Cao</option>
                     </select>
                 </div>
                 <div>
                     <p class="label-select">Cấp bậc công việc</p>
-                    <select id="JobLevel">
+                    <select id="JobLevel" name="JobLevel">
                         <option value="0">Không trả lời</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
+                        <option value="1">1 - Mới vào</option>
+                        <option value="2">2 - Nhân viên</option>
+                        <option value="3">3 - Quản lý</option>
+                        <option value="4">4 - Lãnh đạo</option>
                     </select>
                 </div>
                 <div>
                     <p class="label-select">Vai trò công việc của nhân viên</p>
-                    <select id="JobRole">
+                    <select id="JobRole" name="JobRole">
                         <option value="0">Không trả lời</option>
                         @foreach (var item in Model.JobRoles)
                         {
@@ -204,17 +204,17 @@
                 </div>
                 <div>
                     <p class="label-select">Mức độ hài lòng với công việc</p>
-                    <select id="JobSatisfaction">
+                    <select id="JobSatisfaction" name="JobSatisfaction">
                         <option value="0">Không trả lời</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
+                        <option value="1">1 - Rất không hài lòng</option>
+                        <option value="2">2 - Không hài lòng</option>
+                        <option value="3">3 - Hài lòng</option>
+                        <option value="4">4 - Rất hài lòng</option>
                     </select>
                 </div>
                 <div>
                     <p class="label-select">Tình trạng hôn nhân</p>
-                    <select id="MaritalStatus">
+                    <select id="MaritalStatus" name="MaritalStatus">
                         <option value="0">Không trả lời</option>
                         <option value="Single">Độc thân</option>
                         <option value="Married">Đã kết hôn</option>
@@ -223,42 +223,42 @@
                 </div>
                 <div>
                     <p class="label-select">Hiệu suất của nhân viên</p>
-                    <select id="PerformanceRating">
+                    <select id="PerformanceRating" name="PerformanceRating">
                         <option value="0">Không trả lời</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
+                        <option value="1">1 - Hiệu suất kém</option>
+                        <option value="2">2 - Hiệu suất dưới trung bình</option>
+                        <option value="3">3 - Hiệu suất trung bình</option>
+                        <option value="4">4 - Hiệu suất xuất sắc</option>
                     </select>
                 </div>
                 <div>
                     <p class="label-select">Mối quan hệ tại nơi làm việc</p>
-                    <select id="RelationshipSatisfaction">
+                    <select id="RelationshipSatisfaction" name="RelationshipSatisfaction">
                         <option value="0">Không trả lời</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
+                        <option value="1">1 - Rất không hài lòng</option>
+                        <option value="2">2 - Không hài lòng</option>
+                        <option value="3">3 - Hài lòng</option>
+                        <option value="4">4 - Rất hài lòng</option>
                     </select>
                 </div>
                 <div>
                     <p class="label-select">Cấp độ quyền chọn cổ phiếu</p>
-                    <select id="StockOptionLevel">
-                        <option value="0">Không trả lời</option>
-                        <option value="0">1</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
+                    <select id="StockOptionLevel" name="StockOptionLevel">
+                        <option value="-1">Không trả lời</option>
+                        <option value="0">1 - Không có quyền chọn cổ phiếu</option>
+                        <option value="1">2 - Không có quyền chọn cổ phiếu</option>
+                        <option value="2">3 - Cấp độ quyền chọn cổ phiếu trung bình</option>
+                        <option value="3">4 - Cấp độ quyền chọn cổ phiếu cao</option>
                     </select>
                 </div>
                 <div>
                     <p class="label-select">Cân bằng công việc và cuộc sống</p>
-                    <select id="WorkLifeBalance">
+                    <select id="WorkLifeBalance" name="WorkLifeBalance">
                         <option value="0">Không trả lời</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
+                        <option value="1">1 - Rất kém</option>
+                        <option value="2">2 - Kém</option>
+                        <option value="3">3 - Tạm được</option>
+                        <option value="4">4 - Tốt</option>
                     </select>
                 </div>
                 <div>
@@ -313,26 +313,26 @@
         <img src="~/Images/send.gif" alt="">
         <div>
             <p>
-                Góp ý cho chúng tôi nếu bạn cảm giác bị ngứa họng nha.
+                Góp ý cho chúng tôi nếu bạn có nhưng góp ý hay cho tôi.
             </p>
-            <form action="POST" method="">
+            <form action="/@ENV.ROUTE.SEND_EMAIL" method="POST">
                 <div class="group">
                     <input type="text" name="name" id="name" required="required" class="input-info tognoek">
                     <span class="highlight"></span>
                     <span class="bar"></span>
-                    <label for="name" class="tog">Tên của nhỏ</label>
+                    <label for="name" class="tog">Cho tôi biết tên bạn</label>
                 </div>
                 <div class="group">
                     <input type="email" name="email" id="email" required="required" class="input-info tognoek">
                     <span class="highlight"></span>
                     <span class="bar"></span>
-                    <label for="email" class="tog">Nhét email để nhập lời ngấp</label>
+                    <label for="email" class="tog">Email của bạn là gì</label>
                 </div>
                 <div class="group">
                     <textarea type="textarea" rows="5" required="required"></textarea>
                     <span class="highlight"></span>
                     <span class="bar"></span>
-                    <label for="message" class="tog">Những lời ngứa họng của nhỏ viết đây</label>
+                    <label for="message" class="tog">Những lời bạn muốn nói</label>
                 </div>
                 <button type="submit" class="button-30 btn_tg" role="button">Gửi đi này!</button>
             </form>
